@@ -1,0 +1,132 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GODOT_VERSION: 4.7-stable
+      GODOT_RELEASE_NAME: Godot_v4.7-stable
+      ANDROID_PLATFORM: android-35
+      ANDROID_BUILD_TOOLS: 35.0.0
+
+    steps:
+      - name: Check out source and Git LFS assets
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
+        shell: bash
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager \
+            "platform-tools" \
+            "platforms;${ANDROID_PLATFORM}" \
+            "build-tools;${ANDROID_BUILD_TOOLS}"
+
+      - name: Install Godot and export templates
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p "$HOME/godot" "$HOME/.local/share/godot/export_templates/4.7.stable"
+
+          curl -fL --retry 3 \
+            "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/${GODOT_RELEASE_NAME}_linux.x86_64.zip" \
+            -o /tmp/godot.zip
+          unzip -q /tmp/godot.zip -d "$HOME/godot"
+          chmod +x "$HOME/godot/${GODOT_RELEASE_NAME}_linux.x86_64"
+
+          curl -fL --retry 3 \
+            "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/${GODOT_RELEASE_NAME}_export_templates.tpz" \
+            -o /tmp/export_templates.tpz
+          rm -rf /tmp/godot-templates
+          mkdir -p /tmp/godot-templates
+          unzip -q /tmp/export_templates.tpz -d /tmp/godot-templates
+          cp -a /tmp/godot-templates/templates/. "$HOME/.local/share/godot/export_templates/4.7.stable/"
+
+          echo "$HOME/godot" >> "$GITHUB_PATH"
+
+      - name: Configure Godot Android export
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p "$HOME/.config/godot" "$HOME/.android"
+
+          if [ ! -f "$HOME/.android/debug.keystore" ]; then
+            keytool -genkeypair \
+              -keystore "$HOME/.android/debug.keystore" \
+              -storepass android \
+              -alias androiddebugkey \
+              -keypass android \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+          cat > "$HOME/.config/godot/editor_settings-4.tres" <<EOF
+          [gd_resource format=3]
+
+          [resource]
+          export/android/android_sdk_path = "$ANDROID_SDK_ROOT"
+          export/android/java_sdk_path = "$JAVA_HOME"
+          export/android/debug_keystore = "$HOME/.android/debug.keystore"
+          export/android/debug_keystore_user = "androiddebugkey"
+          export/android/debug_keystore_pass = "android"
+          EOF
+
+      - name: Import project
+        shell: bash
+        run: |
+          "$HOME/godot/${GODOT_RELEASE_NAME}_linux.x86_64" \
+            --headless \
+            --editor \
+            --path . \
+            --quit-after 120
+
+      - name: Export debug APK
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p build/android
+          "$HOME/godot/${GODOT_RELEASE_NAME}_linux.x86_64" \
+            --headless \
+            --path . \
+            --export-debug "Android Test" \
+            "build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk"
+          test -s "build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk"
+
+      - name: Create checksum
+        shell: bash
+        run: |
+          cd build/android
+          sha256sum LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk > SHA256SUMS.txt
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test
+          path: |
+            build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk
+            build/android/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
