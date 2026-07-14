@@ -118,18 +118,61 @@ jobs:
             "build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk"
           test -s "build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk"
 
-      - name: Create checksum
+      - name: Create checksum and split APK
         shell: bash
         run: |
+          set -euxo pipefail
           cd build/android
           sha256sum LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk > SHA256SUMS.txt
+          split -b 400M -d -a 2 \
+            LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk \
+            LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-
+          test -f LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-04
 
-      - name: Upload APK artifact
+      - name: Upload APK part 00
         uses: actions/upload-artifact@v4
         with:
-          name: LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test
-          path: |
-            build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk
-            build/android/SHA256SUMS.txt
+          name: LaborEscapeAdventure-APK-part-00
+          path: build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-00
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload APK part 01
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaborEscapeAdventure-APK-part-01
+          path: build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-01
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload APK part 02
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaborEscapeAdventure-APK-part-02
+          path: build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-02
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload APK part 03
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaborEscapeAdventure-APK-part-03
+          path: build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-03
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload APK part 04
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaborEscapeAdventure-APK-part-04
+          path: build/android/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk.part-04
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload checksum
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaborEscapeAdventure-APK-checksum
+          path: build/android/SHA256SUMS.txt
           if-no-files-found: error
           retention-days: 30
