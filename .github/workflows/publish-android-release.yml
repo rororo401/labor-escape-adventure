@@ -1,0 +1,56 @@
+name: Publish Android APK Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-android-release.yml
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Download APK artifact from successful build
+        uses: actions/download-artifact@v4
+        with:
+          name: LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test
+          path: release
+          repository: rororo401/labor-escape-adventure
+          run-id: 29344227291
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify APK exists
+        shell: bash
+        run: |
+          set -euxo pipefail
+          ls -lh release
+          test -s release/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk
+          sha256sum release/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk | tee release/SHA256SUMS.txt
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: android-v0.1.0-test
+        shell: bash
+        run: |
+          set -euxo pipefail
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" \
+              release/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk \
+              release/SHA256SUMS.txt \
+              --clobber
+          else
+            gh release create "$TAG" \
+              release/LaborEscapeAdventure-Android-arm64-v8a-v0.1.0-test.apk \
+              release/SHA256SUMS.txt \
+              --title "Labor Escape Adventure Android v0.1.0 Test" \
+              --notes "Unsigned ARM64 Android test build generated with Godot 4.7."
+          fi
