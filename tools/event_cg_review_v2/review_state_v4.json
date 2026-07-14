@@ -1,0 +1,31 @@
+{
+  "version": 4,
+  "updated_at": "2026-07-14T02:47:30.930Z",
+  "items": {
+    "assets/events_summer/company_work/phase5/company_high_intensity_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T02:46:50.278Z"
+    },
+    "assets/events_summer/weekend/stay_home/face_mask_sheet.png": {
+      "status": "needs_edit",
+      "note": "",
+      "updated_at": "2026-07-14T02:47:26.407Z"
+    },
+    "assets/events_summer/weekend/stay_home/skincare_home.png": {
+      "status": "needs_edit",
+      "note": "",
+      "updated_at": "2026-07-14T02:47:28.147Z"
+    },
+    "assets/events/weekend/stay_home/skincare_home.png": {
+      "status": "needs_edit",
+      "note": "",
+      "updated_at": "2026-07-14T02:47:29.253Z"
+    },
+    "assets/events/weekend/stay_home/face_mask_sheet.png": {
+      "status": "needs_edit",
+      "note": "",
+      "updated_at": "2026-07-14T02:47:30.930Z"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event CG Review</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Event CG Review</h1>
+        <p id="summary">검수 목록을 불러오는 중...</p>
+      </div>
+      <div class="top-actions">
+        <button id="reloadButton" type="button">새로고침</button>
+        <button id="exportButton" type="button">JSON 열기 위치</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section>
+          <label for="searchInput">검색</label>
+          <input id="searchInput" type="search" placeholder="이벤트명, 파일명, 메모" />
+        </section>
+
+        <section>
+          <label for="groupFilter">그룹</label>
+          <select id="groupFilter"></select>
+        </section>
+
+        <section>
+          <label for="variantFilter">버전</label>
+          <select id="variantFilter"></select>
+        </section>
+
+        <section>
+          <label for="statusFilter">상태</label>
+          <select id="statusFilter">
+            <option value="all">전체</option>
+            <option value="pending">미검수</option>
+            <option value="approved">검수 완료</option>
+            <option value="needs_edit">수정 필요</option>
+            <option value="remake">다시 만들기</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="sortSelect">정렬</label>
+          <select id="sortSelect">
+            <option value="group">그룹순</option>
+            <option value="status">상태순</option>
+            <option value="path">파일명순</option>
+          </select>
+        </section>
+
+        <section class="counts">
+          <div><span>전체</span><strong id="countTotal">0</strong></div>
+          <div><span>표시</span><strong id="countVisible">0</strong></div>
+          <div><span>완료</span><strong id="countApproved">0</strong></div>
+          <div><span>수정</span><strong id="countEdit">0</strong></div>
+          <div><span>재생성</span><strong id="countRemake">0</strong></div>
+        </section>
+      </aside>
+
+      <section class="content">
+        <div id="grid" class="grid"></div>
+      </section>
+    </main>
+
+    <dialog id="detailDialog">
+      <form method="dialog" class="dialog-shell">
+        <button class="dialog-close" value="close" aria-label="닫기">×</button>
+        <div class="dialog-image-wrap">
+          <button id="prevButton" class="nav-button nav-prev" type="button" aria-label="이전 이미지">‹</button>
+          <img id="detailImage" alt="" />
+          <button id="nextButton" class="nav-button nav-next" type="button" aria-label="다음 이미지">›</button>
+          <div id="detailProgress" class="detail-progress"></div>
+        </div>
+        <div class="dialog-panel">
+          <div class="meta-row">
+            <span id="detailGroup" class="pill"></span>
+            <span id="detailVariant" class="pill"></span>
+            <span id="detailStatus" class="pill"></span>
+          </div>
+          <h2 id="detailTitle"></h2>
+          <p id="detailPath"></p>
+          <div id="detailEvents" class="event-list"></div>
+          <label for="detailNote">수정사항 메모</label>
+          <textarea id="detailNote" rows="7" placeholder="손/발 문제, 캐릭터 비율, 얼굴 붕괴, 배경 오류, 다시 만들 프롬프트 힌트 등을 적어두기"></textarea>
+          <div class="review-actions">
+            <button type="button" data-status="approved" data-advance="true">검수 완료 후 다음 [1]</button>
+            <button type="button" data-status="needs_edit" data-advance="true">수정 필요 후 다음 [2]</button>
+            <button type="button" data-status="remake" data-advance="true">다시 만들기 후 다음 [3]</button>
+            <button type="button" data-status="pending">미검수로 되돌림</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

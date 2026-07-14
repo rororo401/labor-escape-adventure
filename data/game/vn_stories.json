@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "visuals": {
+    "first_day_work": {
+      "default_mode": "office",
+      "modes": {
+        "office": {
+          "background_path": "res://assets/backgrounds/work/startup_office_morning.png",
+          "date_text": "D-Day  첫 출근  ·  2016-07-01 금요일",
+          "character_visible": true,
+          "default_outfit": "casual_default"
+        },
+        "event": {
+          "background_path": "res://assets/backgrounds/work/office_phone_call_event.png",
+          "date_text": "D-Day  회사  ·  2016-07-01 오후",
+          "character_visible": false
+        },
+        "leave_work": {
+          "background_path": "res://assets/backgrounds/transition/leave_work_evening.png",
+          "date_text": "D-Day  퇴근  ·  2016-07-01 저녁",
+          "character_visible": false
+        },
+        "home": {
+          "background_path": "res://assets/backgrounds/home/prologue_living_room_lovely.png",
+          "date_text": "D-Day  집  ·  2016-07-01 밤",
+          "character_visible": true,
+          "default_outfit": "homewear"
+        }
+      }
+    }
+  },
+  "stories": {
+    "prologue": [
+      {
+        "expression": "tired",
+        "text": "D-1, 밤. 퇴근하고 돌아온 방 안은 조용했고, TV에서는 오래된 투자 다큐가 흘러나오고 있었다."
+      },
+      {
+        "expression": "neutral",
+        "text": "별생각 없이 리모컨을 내려놓으려던 순간, 화면 속 전문가의 말이 묘하게 귀에 박혔다."
+      },
+      {
+        "expression": "surprised",
+        "text": "\"10년 동안 보유할 생각이 없는 주식이라면, 단 10분도 보유하지 말라.\""
+      },
+      {
+        "expression": "thinking",
+        "text": "10년... 그렇게 오래 믿을 수 있는 회사를 고른다면, 내 노동 말고도 내 편이 하나 생기는 걸까?"
+      },
+      {
+        "expression": "determined",
+        "text": "언젠가 순자산 10억을 모아서, 월급날만 기다리지 않는 경제적 자유를 얻고 싶었다."
+      },
+      {
+        "expression": "worried",
+        "text": "물론 가진 돈은 많지 않다. 월급은 들어오면 카드값과 생활비 사이에서 금방 얇아진다."
+      },
+      {
+        "expression": "determined",
+        "text": "그래도 매일 조금씩 기록하고, 아침마다 사고팔지 정한다면 나도 해볼 수 있을 것 같았다."
+      },
+      {
+        "expression": "smile",
+        "text": "내일 아침, 처음으로 계좌를 열어보기로 했다. 노동탈출이라니, 말만 해도 조금 웃겼다."
+      }
+    ],
+    "morning_briefing": [
+      {
+        "outfit": "homewear",
+        "expression": "thinking",
+        "text": "아침이 되었다. 밤새 세상은 조용했지만, 내 계좌는 어제보다 조금 달라져 있었다."
+      },
+      {
+        "outfit": "homewear",
+        "expression": "determined",
+        "text": "오늘은 먼저 달력을 확인하고, 장이 열리는지부터 살펴본 뒤 하루 계획을 정하자."
+      }
+    ],
+    "morning_briefing_closed": [
+      {
+        "outfit": "homewear",
+        "expression": "neutral",
+        "text": "아침이 되었다. 달력을 보자마자 오늘은 장이 쉬는 날이라는 걸 알았다."
+      },
+      {
+        "outfit": "homewear",
+        "expression": "smile",
+        "text": "시세창을 켤 필요는 없다. 집에서 쉬거나 밖에 나가며 오늘 하루를 정해보자."
+      }
+    ],
+    "first_day_work": [
+      {
+        "mode": "office",
+        "outfit": "casual_default",
+        "expression": "neutral",
+        "speaker": "",
+        "text": "회사에 출근했다."
+      },
+      {
+        "mode": "office",
+        "outfit": "casual_default",
+        "expression": "determined",
+        "speaker": "",
+        "text": "오늘 아침에 매수한 주식이 무럭무럭 자라길, 모니터 앞에서 아주 작게 기도했다."
+      },
+      {
+        "mode": "event",
+        "speaker": "",
+        "text": "그때 멀리서 {box_trading_manager}의 전화통화 소리가 들려왔다."
+      },
+      {
+        "mode": "event",
+        "speaker": "{box_trading_manager}",
+        "text": "\"지금 시장지수 2,000 밑이면 무조건 싸다. 우리나라는 항상 1,900에서 사고 2,000 넘으면 파는 거야. 이게 박스권 매매라는 거다.\""
+      },
+      {
+        "mode": "event",
+        "speaker": "",
+        "text": "주식을 시작해서 그런가, 괜히 귀가 쫑긋했다."
+      },
+      {
+        "mode": "office",
+        "outfit": "casual_default",
+        "expression": "thinking",
+        "speaker": "",
+        "text": "하지만 지금은 월급을 주는 쪽에 집중해야 한다. 우선 일부터 하자."
+      },
+      {
+        "mode": "leave_work",
+        "speaker": "",
+        "text": "하루가 지나간다. 메신저 알림과 서류 사이로 오후가 천천히 접혔다."
+      },
+      {
+        "mode": "home",
+        "outfit": "homewear",
+        "expression": "thinking",
+        "speaker": "",
+        "text": "퇴근! 집에 돌아오자마자 마음이 계좌 쪽으로 먼저 달려갔다."
+      },
+      {
+        "mode": "home",
+        "outfit": "homewear",
+        "expression": "surprised",
+        "speaker": "",
+        "text": "오늘 주식이 어떻게 되었을까? 궁금해서 도저히 그냥 지나칠 수가 없었다."
+      }
+    ]
+  }
+}

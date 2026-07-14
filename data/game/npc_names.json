@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "npcs": {
+    "box_trading_manager": {
+      "display_name_ko": "강민석 부장",
+      "role_ko": "부장",
+      "notes_ko": "회사에서 종종 투자 이야기를 크게 하는 상사. 첫날 박스권 매매 전화통화 이벤트에서 등장한다."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[remap]
+
+importer="keep"
+type=""
+
+[deps]
+
+source_file="res://data/raw/prices/012330.csv"
+dest_files=[]
+
+[params]

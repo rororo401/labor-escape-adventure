@@ -1,0 +1,307 @@
+{
+  "debug_real_name_mode": false,
+  "alias_file": "data/market/company_aliases.json",
+  "selection_basis": "KOSPI market capitalization near 2026-06-30 close, excluding preferred shares, ETFs, and holding-company style names.",
+  "companies": [
+    {
+      "ticker": "005930",
+      "real_name_ko": "삼성전자",
+      "display_name_ko": "새벽전자",
+      "sector_hint": "반도체/전자",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/005930.csv"
+    },
+    {
+      "ticker": "000660",
+      "real_name_ko": "SK하이닉스",
+      "display_name_ko": "구름반도체",
+      "sector_hint": "반도체",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/000660.csv"
+    },
+    {
+      "ticker": "009150",
+      "real_name_ko": "삼성전기",
+      "display_name_ko": "별빛부품",
+      "sector_hint": "전자부품",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/009150.csv"
+    },
+    {
+      "ticker": "005380",
+      "real_name_ko": "현대차",
+      "display_name_ko": "한길모터스",
+      "sector_hint": "자동차",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/005380.csv"
+    },
+    {
+      "ticker": "032830",
+      "real_name_ko": "삼성생명",
+      "display_name_ko": "든든생명",
+      "sector_hint": "보험",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/032830.csv"
+    },
+    {
+      "ticker": "034020",
+      "real_name_ko": "두산에너빌리티",
+      "display_name_ko": "태양에너지",
+      "sector_hint": "에너지/기계",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/034020.csv"
+    },
+    {
+      "ticker": "000270",
+      "real_name_ko": "기아",
+      "display_name_ko": "바람자동차",
+      "sector_hint": "자동차",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/000270.csv"
+    },
+    {
+      "ticker": "012450",
+      "real_name_ko": "한화에어로스페이스",
+      "display_name_ko": "하늘항공",
+      "sector_hint": "방산/항공",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/012450.csv"
+    },
+    {
+      "ticker": "012330",
+      "real_name_ko": "현대모비스",
+      "display_name_ko": "중심모빌리티",
+      "sector_hint": "자동차부품",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/012330.csv"
+    },
+    {
+      "ticker": "068270",
+      "real_name_ko": "셀트리온",
+      "display_name_ko": "푸른바이오",
+      "sector_hint": "바이오",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/068270.csv"
+    },
+    {
+      "ticker": "006400",
+      "real_name_ko": "삼성SDI",
+      "display_name_ko": "달빛전지",
+      "sector_hint": "2차전지",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/006400.csv"
+    },
+    {
+      "ticker": "010120",
+      "real_name_ko": "LS ELECTRIC",
+      "display_name_ko": "번개전력",
+      "sector_hint": "전력기기",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/010120.csv"
+    },
+    {
+      "ticker": "066570",
+      "real_name_ko": "LG전자",
+      "display_name_ko": "라온전자",
+      "sector_hint": "가전/전자",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/066570.csv"
+    },
+    {
+      "ticker": "035420",
+      "real_name_ko": "NAVER",
+      "display_name_ko": "초록포털",
+      "sector_hint": "인터넷/플랫폼",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/035420.csv"
+    },
+    {
+      "ticker": "042660",
+      "real_name_ko": "한화오션",
+      "display_name_ko": "바다조선",
+      "sector_hint": "조선",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/042660.csv"
+    },
+    {
+      "ticker": "000810",
+      "real_name_ko": "삼성화재",
+      "display_name_ko": "우산화재",
+      "sector_hint": "보험",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/000810.csv"
+    },
+    {
+      "ticker": "009540",
+      "real_name_ko": "HD한국조선해양",
+      "display_name_ko": "대양조선",
+      "sector_hint": "조선",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/009540.csv"
+    },
+    {
+      "ticker": "042700",
+      "real_name_ko": "한미반도체",
+      "display_name_ko": "정밀칩",
+      "sector_hint": "반도체장비",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/042700.csv"
+    },
+    {
+      "ticker": "006800",
+      "real_name_ko": "미래에셋증권",
+      "display_name_ko": "미래증권",
+      "sector_hint": "증권",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/006800.csv"
+    },
+    {
+      "ticker": "015760",
+      "real_name_ko": "한국전력",
+      "display_name_ko": "국민전력",
+      "sector_hint": "전력/유틸리티",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/015760.csv"
+    },
+    {
+      "ticker": "011070",
+      "real_name_ko": "LG이노텍",
+      "display_name_ko": "빛결부품",
+      "sector_hint": "전자부품",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/011070.csv"
+    },
+    {
+      "ticker": "010130",
+      "real_name_ko": "고려아연",
+      "display_name_ko": "은빛금속",
+      "sector_hint": "비철금속",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/010130.csv"
+    },
+    {
+      "ticker": "010140",
+      "real_name_ko": "삼성중공업",
+      "display_name_ko": "거북조선",
+      "sector_hint": "조선",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/010140.csv"
+    },
+    {
+      "ticker": "051910",
+      "real_name_ko": "LG화학",
+      "display_name_ko": "화원화학",
+      "sector_hint": "화학/2차전지소재",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/051910.csv"
+    },
+    {
+      "ticker": "017670",
+      "real_name_ko": "SK텔레콤",
+      "display_name_ko": "연결텔레콤",
+      "sector_hint": "통신",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/017670.csv"
+    },
+    {
+      "ticker": "064350",
+      "real_name_ko": "현대로템",
+      "display_name_ko": "철길로템",
+      "sector_hint": "철도/방산",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/064350.csv"
+    },
+    {
+      "ticker": "033780",
+      "real_name_ko": "KT&G",
+      "display_name_ko": "담배마당",
+      "sector_hint": "담배/건강기능식품",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/033780.csv"
+    },
+    {
+      "ticker": "011200",
+      "real_name_ko": "HMM",
+      "display_name_ko": "푸른해운",
+      "sector_hint": "해운",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/011200.csv"
+    },
+    {
+      "ticker": "096770",
+      "real_name_ko": "SK이노베이션",
+      "display_name_ko": "새길에너지",
+      "sector_hint": "정유/화학/배터리",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/096770.csv"
+    },
+    {
+      "ticker": "024110",
+      "real_name_ko": "기업은행",
+      "display_name_ko": "튼튼은행",
+      "sector_hint": "은행",
+      "first_date": "2016-07-01",
+      "last_date": "2026-06-30",
+      "daily_rows": 2451,
+      "source_file": "data/raw/prices/024110.csv"
+    }
+  ]
+}

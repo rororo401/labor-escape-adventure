@@ -1,0 +1,571 @@
+{
+  "version": 3,
+  "updated_at": "2026-07-14T00:35:57.504Z",
+  "items": {
+    "assets/events/company_work/phase5/company_communication_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:14:21.563Z"
+    },
+    "assets/events/company_work/phase5/company_communication_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:14:37.838Z"
+    },
+    "assets/events/company_work/phase5/company_customer_03.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:14:45.312Z"
+    },
+    "assets/events/company_work/phase5/company_customer_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:14:47.312Z"
+    },
+    "assets/events/company_work/phase5/company_customer_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:14:48.829Z"
+    },
+    "assets/events/company_work/phase5/company_documents_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:14:57.575Z"
+    },
+    "assets/events/company_work/phase5/company_documents_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:01.855Z"
+    },
+    "assets/events/company_work/phase5/company_documents_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:10.177Z"
+    },
+    "assets/events/company_work/phase5/company_focus_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:21.147Z"
+    },
+    "assets/events/company_work/phase5/company_focus_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:24.376Z"
+    },
+    "assets/events/company_work/phase5/company_focus_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:29.847Z"
+    },
+    "assets/events/company_work/phase5/company_handoff_03.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:36.943Z"
+    },
+    "assets/events/company_work/phase5/company_handoff_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:37.847Z"
+    },
+    "assets/events/company_work/phase5/company_handoff_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:15:46.948Z"
+    },
+    "assets/events/company_work/phase5/company_inbox_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:04.300Z"
+    },
+    "assets/events/company_work/phase5/company_inbox_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:07.381Z"
+    },
+    "assets/events/company_work/phase5/company_inbox_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:09.298Z"
+    },
+    "assets/events/company_work/phase5/company_knowledge_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:19.301Z"
+    },
+    "assets/events/company_work/phase5/company_knowledge_03.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:20.829Z"
+    },
+    "assets/events/company_work/phase5/company_low_intensity_10.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:32.131Z"
+    },
+    "assets/events/company_work/phase5/company_office_routine_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:47.802Z"
+    },
+    "assets/events/company_work/phase5/company_office_routine_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:49.561Z"
+    },
+    "assets/events/company_work/phase5/company_office_routine_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:53.977Z"
+    },
+    "assets/events/company_work/phase5/company_office_routine_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:55.778Z"
+    },
+    "assets/events/company_work/phase5/company_office_routine_10.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:16:59.851Z"
+    },
+    "assets/events/company_work/phase5/company_office_routine_09.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:00.603Z"
+    },
+    "assets/events/company_work/phase5/company_operations_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:02.269Z"
+    },
+    "assets/events/company_work/phase5/company_operations_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:09.439Z"
+    },
+    "assets/events/company_work/phase5/company_operations_10.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:13.733Z"
+    },
+    "assets/events/company_work/phase5/company_planning_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:17.212Z"
+    },
+    "assets/events/company_work/phase5/company_review_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:24.059Z"
+    },
+    "assets/events/company_work/phase5/company_review_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:28.404Z"
+    },
+    "assets/events/company_work/phase5/company_review_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:34.195Z"
+    },
+    "assets/events_summer/company_work/phase5/company_customer_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:52.740Z"
+    },
+    "assets/events_summer/company_work/phase5/company_customer_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:54.317Z"
+    },
+    "assets/events_summer/company_work/phase5/company_customer_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:55.479Z"
+    },
+    "assets/events_summer/company_work/phase5/company_customer_03.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:17:57.539Z"
+    },
+    "assets/events_summer/company_work/phase5/company_documents_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:00.575Z"
+    },
+    "assets/events_summer/company_work/phase5/company_focus_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:18.437Z"
+    },
+    "assets/events_summer/company_work/phase5/company_high_intensity_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:31.827Z"
+    },
+    "assets/events_summer/company_work/phase5/company_high_intensity_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:34.054Z"
+    },
+    "assets/events_summer/company_work/phase5/company_inbox_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:45.047Z"
+    },
+    "assets/events_summer/company_work/phase5/company_inbox_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:47.179Z"
+    },
+    "assets/events_summer/company_work/phase5/company_inbox_06.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:48.094Z"
+    },
+    "assets/events_summer/company_work/phase5/company_inbox_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:55.049Z"
+    },
+    "assets/events_summer/company_work/phase5/company_it_security_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:18:57.913Z"
+    },
+    "assets/events_summer/company_work/phase5/company_it_security_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:19:01.471Z"
+    },
+    "assets/events_summer/company_work/phase5/company_knowledge_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:30.034Z"
+    },
+    "assets/events_summer/company_work/phase5/company_knowledge_10.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:35.511Z"
+    },
+    "assets/events_summer/company_work/phase5/company_knowledge_09.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:36.449Z"
+    },
+    "assets/events_summer/company_work/phase5/company_low_intensity_01.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:37.765Z"
+    },
+    "assets/events_summer/company_work/phase5/company_low_intensity_06.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:41.675Z"
+    },
+    "assets/events_summer/company_work/phase5/company_low_intensity_08.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:44.987Z"
+    },
+    "assets/events_summer/company_work/phase5/company_low_intensity_09.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:46.058Z"
+    },
+    "assets/events_summer/company_work/phase5/company_meetings_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:48.876Z"
+    },
+    "assets/events_summer/company_work/phase5/company_meetings_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:22:51.630Z"
+    },
+    "assets/events_summer/company_work/phase5/company_office_routine_03.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:05.410Z"
+    },
+    "assets/events_summer/company_work/phase5/company_office_routine_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:09.562Z"
+    },
+    "assets/events_summer/company_work/phase5/company_office_routine_04.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:11.599Z"
+    },
+    "assets/events_summer/company_work/phase5/company_operations_06.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:18.181Z"
+    },
+    "assets/events_summer/company_work/phase5/company_operations_10.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:23.867Z"
+    },
+    "assets/events_summer/company_work/phase5/company_planning_07.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:29.398Z"
+    },
+    "assets/events_summer/company_work/phase5/company_planning_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:30.741Z"
+    },
+    "assets/events_summer/company_work/phase5/company_quality_03.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:43.275Z"
+    },
+    "assets/events_summer/company_work/phase5/company_quality_02.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:23:46.603Z"
+    },
+    "assets/events_summer/company_work/phase5/company_spreadsheet_05.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:01.295Z"
+    },
+    "assets/events/night/money/salary_calculator.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:13.529Z"
+    },
+    "assets/events/night/phase3/night_cold_compress.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:18.276Z"
+    },
+    "assets/events/night/phase3/night_old_message_read.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:21.159Z"
+    },
+    "assets/events/night/phase3/night_wardrobe_scroll.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:25.124Z"
+    },
+    "assets/events/night/snacks/icecream_run.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:36.818Z"
+    },
+    "assets/events/night/snacks/sweet_potato.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:40.174Z"
+    },
+    "assets/events_summer/night/phase3/night_chocolate_bar.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:44.693Z"
+    },
+    "assets/events_summer/night/phase3/night_good_news_alert.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:47.939Z"
+    },
+    "assets/events_summer/night/phase3/night_wardrobe_scroll.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:54.353Z"
+    },
+    "assets/events_summer/night/phase4/night_dust_roll_uniform.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:24:56.812Z"
+    },
+    "assets/events_summer/night/phase4/night_late_email_resist.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:25:07.202Z"
+    },
+    "assets/events_summer/night/phase4/night_wrist_warm_pack.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:25:16.311Z"
+    },
+    "assets/events/weekend/go_out/small_theater_play.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:27:16.446Z"
+    },
+    "assets/events/weekend/go_out/swimming_pool.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:27:26.053Z"
+    },
+    "assets/events_summer/weekend/go_out/baseball_game.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:27:39.797Z"
+    },
+    "assets/events_summer/weekend/go_out/friend_house.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:27:52.582Z"
+    },
+    "assets/events_summer/weekend/go_out/morning_discount_movie.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:29:14.796Z"
+    },
+    "assets/events/weekend/stay_home/coupon_hunt.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:29:45.576Z"
+    },
+    "assets/events/weekend/stay_home/face_mask_sheet.png": {
+      "status": "needs_edit",
+      "note": "",
+      "updated_at": "2026-07-14T00:29:57.282Z"
+    },
+    "assets/events/weekend/stay_home/half_bath.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:30:07.759Z"
+    },
+    "assets/events/weekend/stay_home/skincare_home.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:30:55.135Z"
+    },
+    "assets/events_summer/weekend/stay_home/face_mask_sheet.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:31:20.863Z"
+    },
+    "assets/events_summer/weekend/stay_home/skincare_home.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:31:42.242Z"
+    },
+    "assets/events/weekday/lunch_menu_vote.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:31:55.431Z"
+    },
+    "assets/events/weekday/manager_thanks.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:01.035Z"
+    },
+    "assets/events/weekday/office_aircon_cold.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:08.808Z"
+    },
+    "assets/events/weekday/quarterly_review.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:12.213Z"
+    },
+    "assets/events/weekday/rainy_socks_commute.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:18.396Z"
+    },
+    "assets/events/weekday/sick_day.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:21.184Z"
+    },
+    "assets/events/weekday/umbrella_lost.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:28.791Z"
+    },
+    "assets/events_summer/weekday/cheap_lunch_win.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:36.871Z"
+    },
+    "assets/events_summer/weekday/coffee_machine_broken.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:42.368Z"
+    },
+    "assets/events_summer/weekday/desk_cleaning_day.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:53.003Z"
+    },
+    "assets/events_summer/weekday/document_version_conflict.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:32:56.345Z"
+    },
+    "assets/events_summer/weekday/health_check_notice.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:33:09.288Z"
+    },
+    "assets/events_summer/weekday/manager_one_on_one.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:33:52.790Z"
+    },
+    "assets/events_summer/weekday/missed_alarm.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:33:56.780Z"
+    },
+    "assets/events_summer/weekday/office_aircon_cold.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:34:00.789Z"
+    },
+    "assets/events_summer/weekday/phase4/weekday_junior_thank_you.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:34:31.071Z"
+    },
+    "assets/events_summer/weekday/phase4/weekday_office_light_last.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:34:42.650Z"
+    },
+    "assets/events_summer/weekday/phase4/weekday_office_wifi_drop.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:34:45.344Z"
+    },
+    "assets/events_summer/weekday/phase4/weekday_salary_raise_rumor.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:34:52.081Z"
+    },
+    "assets/events_summer/weekday/phase4/weekday_sunny_window_glare.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:35:03.946Z"
+    },
+    "assets/events_summer/weekday/phase4/weekday_subway_door_delay.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:35:07.697Z"
+    },
+    "assets/events_summer/weekday/subscription_renewal.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:35:43.735Z"
+    },
+    "assets/events_summer/weekday/sudden_meeting.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:35:46.297Z"
+    },
+    "assets/events_summer/weekday/umbrella_share.png": {
+      "status": "remake",
+      "note": "",
+      "updated_at": "2026-07-14T00:35:57.504Z"
+    }
+  }
+}

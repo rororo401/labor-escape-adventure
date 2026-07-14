@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "characters": {
+	"protagonist": {
+	  "name_ko": "주인공",
+	  "default_outfit": "casual_default",
+	  "default_expression": "neutral",
+	  "expressions": [
+		{
+		  "id": "neutral",
+		  "name_ko": "기본"
+		},
+		{
+		  "id": "smile",
+		  "name_ko": "웃음"
+		},
+		{
+		  "id": "thinking",
+		  "name_ko": "고민"
+		},
+		{
+		  "id": "worried",
+		  "name_ko": "걱정"
+		},
+		{
+		  "id": "surprised",
+		  "name_ko": "놀람"
+		},
+		{
+		  "id": "tired",
+		  "name_ko": "피곤"
+		},
+		{
+		  "id": "determined",
+		  "name_ko": "결심"
+		},
+		{
+		  "id": "defeated",
+		  "name_ko": "좌절"
+		}
+	  ],
+	  "outfits": {
+		"casual_default": {
+		  "name_ko": "외출복",
+		  "description_ko": "기본 외출복. 출근길, 투자 확인, 일반 대화에 사용한다.",
+		  "patch_version": "base",
+		  "standing_sheet": {
+			"path": "res://assets/characters/protagonist/casual_default/standing_sheet.png",
+			"columns": 4,
+			"rows": 2,
+			"cell_size": [
+			  384,
+			  512
+			],
+			"expression_order": [
+			  "neutral",
+			  "smile",
+			  "thinking",
+			  "worried",
+			  "surprised",
+			  "tired",
+			  "determined",
+              "defeated"
+			]
+		  },
+		  "standing_full_images": {
+			"neutral": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/neutral.png"
+			},
+			"smile": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/smile.png"
+			},
+			"thinking": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/thinking.png"
+			},
+			"worried": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/worried.png"
+			},
+			"surprised": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/surprised.png"
+			},
+			"tired": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/tired.png"
+			},
+			"determined": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/determined.png"
+			},
+			"defeated": {
+			  "path": "res://assets/characters/protagonist/casual_default/standing/defeated.png"
+			}
+		  }
+		},
+		"homewear": {
+		  "name_ko": "홈웨어",
+		  "description_ko": "집에서 쉬거나 프롤로그 독백, 밤 장면에 사용한다.",
+		  "patch_version": "base",
+		  "standing_sheet": {
+			"path": "res://assets/characters/protagonist/homewear/standing_sheet.png",
+			"columns": 4,
+			"rows": 2,
+			"cell_size": [
+			  384,
+			  512
+			],
+			"expression_order": [
+			  "neutral",
+			  "smile",
+			  "thinking",
+			  "worried",
+			  "surprised",
+			  "tired",
+			  "determined",
+              "defeated"
+			]
+		  },
+		  "standing_full_images": {
+			"neutral": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/neutral.png"
+			},
+			"smile": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/smile.png"
+			},
+			"thinking": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/thinking.png"
+			},
+			"worried": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/worried.png"
+			},
+			"surprised": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/surprised.png"
+			},
+			"tired": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/tired.png"
+			},
+			"determined": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/determined.png"
+			},
+			"defeated": {
+			  "path": "res://assets/characters/protagonist/homewear/standing/defeated.png"
+			}
+		  }
+		},
+		"summer_office": {
+		  "name_ko": "여름 출근복",
+		  "description_ko": "여름철 출근, 회사 기본업무, 평일 낮 장면에 사용하는 반팔 출근복.",
+		  "patch_version": "summer",
+		  "standing_sheet": {
+			"path": "res://assets/characters/protagonist/summer_office/standing_sheet.png",
+			"columns": 4,
+			"rows": 2,
+			"cell_size": [
+			  384,
+			  512
+			],
+			"expression_order": [
+			  "neutral",
+			  "smile",
+			  "thinking",
+			  "worried",
+			  "surprised",
+			  "tired",
+			  "determined",
+              "defeated"
+			]
+		  },
+		  "standing_full_images": {
+			"neutral": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/neutral.png"
+			},
+			"smile": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/smile.png"
+			},
+			"thinking": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/thinking.png"
+			},
+			"worried": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/worried.png"
+			},
+			"surprised": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/surprised.png"
+			},
+			"tired": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/tired.png"
+			},
+			"determined": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/determined.png"
+			},
+			"defeated": {
+			  "path": "res://assets/characters/protagonist/summer_office/standing/defeated.png"
+			}
+		  }
+		},
+		"summer_homewear": {
+		  "name_ko": "여름 홈웨어",
+		  "description_ko": "여름철 집, 주말 집에 있기, 밤 장면에 사용하는 반팔 실내복.",
+		  "patch_version": "summer",
+		  "standing_sheet": {
+			"path": "res://assets/characters/protagonist/summer_homewear/standing_sheet.png",
+			"columns": 4,
+			"rows": 2,
+			"cell_size": [
+			  384,
+			  512
+			],
+			"expression_order": [
+			  "neutral",
+			  "smile",
+			  "thinking",
+			  "worried",
+			  "surprised",
+			  "tired",
+			  "determined",
+              "defeated"
+			]
+		  },
+		  "standing_full_images": {
+			"neutral": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/neutral.png"
+			},
+			"smile": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/smile.png"
+			},
+			"thinking": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/thinking.png"
+			},
+			"worried": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/worried.png"
+			},
+			"surprised": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/surprised.png"
+			},
+			"tired": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/tired.png"
+			},
+			"determined": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/determined.png"
+			},
+			"defeated": {
+			  "path": "res://assets/characters/protagonist/summer_homewear/standing/defeated.png"
+			}
+		  }
+		}
+	  }
+	}
+  },
+  "fallbacks": {
+	"outfit": "casual_default",
+	"expression": "neutral"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "debug_real_name_mode": true,
+  "description": "Game-facing names for countries, people, institutions, and event keywords used by fixed market events. Keep display_name_ko equal to the real name for now; later this file can fictionalize them without rewriting event text.",
+  "entities": {
+    "country_us": {
+      "type": "country",
+      "real_name_ko": "미국",
+      "display_name_ko": "미국"
+    },
+    "country_japan": {
+      "type": "country",
+      "real_name_ko": "일본",
+      "display_name_ko": "일본"
+    },
+    "country_russia": {
+      "type": "country",
+      "real_name_ko": "러시아",
+      "display_name_ko": "러시아"
+    },
+    "country_ukraine": {
+      "type": "country",
+      "real_name_ko": "우크라이나",
+      "display_name_ko": "우크라이나"
+    },
+    "country_korea": {
+      "type": "country",
+      "real_name_ko": "한국",
+      "display_name_ko": "한국"
+    },
+    "person_trump": {
+      "type": "person",
+      "real_name_ko": "트럼프",
+      "display_name_ko": "트럼프"
+    },
+    "institution_fed": {
+      "type": "institution",
+      "real_name_ko": "미 연준",
+      "display_name_ko": "미 연준"
+    },
+    "institution_fsc": {
+      "type": "institution",
+      "real_name_ko": "금융위원회",
+      "display_name_ko": "금융위원회"
+    },
+    "event_covid": {
+      "type": "event",
+      "real_name_ko": "코로나19",
+      "display_name_ko": "코로나19"
+    },
+    "event_kospi": {
+      "type": "index",
+      "real_name_ko": "코스피",
+      "display_name_ko": "코스피"
+    },
+    "event_short_selling": {
+      "type": "policy",
+      "real_name_ko": "공매도",
+      "display_name_ko": "공매도"
+    }
+  }
+}

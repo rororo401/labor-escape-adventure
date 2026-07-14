@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-07-02T17:59:36",
+  "range": {
+    "start": "2016-07-01",
+    "end": "2026-06-30"
+  },
+  "price_source": "https://api.finance.naver.com/siseJson.naver",
+  "holiday_source": "https://date.nager.at/api/v3/PublicHolidays/{year}/KR plus manual KRX market-closure labels",
+  "trading_calendar_method": "Union of fetched stock daily dates; all other calendar dates are marked non-trading.",
+  "company_count": 30,
+  "trading_day_count": 2451,
+  "non_trading_day_count": 1201
+}

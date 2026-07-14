@@ -1,0 +1,4723 @@
+{
+  "version": 1,
+  "note": "Generated from phase1 event planning docs. Use as the staging catalog before promoting events into live day_events.json.",
+  "counts": {
+    "total": 130,
+    "stay_home": 40,
+    "go_out": 40,
+    "weekday": 25,
+    "night": 25
+  },
+  "events": [
+    {
+      "id": "clean_room",
+      "name_ko": "청소하기",
+      "group": "stay_home",
+      "tags": [
+        "routine",
+        "productive"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/clean_room.png",
+      "cg_brief": "방을 치우는 주인공, 책상과 청소도구",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "방을 정리하며 마음도 조금 정돈한다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "오늘은 방부터 치우자. 주식 계좌는 숫자로 어지럽고, 방은 물건으로 어지럽다.",
+        "책상 위 영수증을 모으다 보니 지난주의 충동구매가 한 장씩 모습을 드러냈다.",
+        "방바닥이 보이자 마음에도 작은 통로가 생겼다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -2,
+          -1
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "nap",
+      "name_ko": "드르렁 낮잠",
+      "group": "stay_home",
+      "tags": [
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/nap.png",
+      "cg_brief": "낮 햇살 아래 이불을 덮고 낮잠",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "집에서 푹 쉬며 체력을 회복한다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "알람은 잠깐 꺼두자. 세상에는 꼭 지금 당장 하지 않아도 되는 일도 있다.",
+        "회사 메신저 소리도, 차트의 빨간색과 파란색도 천천히 멀어졌다.",
+        "시간을 잃은 대신 몸을 조금 되찾았다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          6,
+          10
+        ],
+        "mood_delta": [
+          3,
+          5
+        ],
+        "fatigue_delta": [
+          -28,
+          -20
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "watch_ott",
+      "name_ko": "OTT 시청",
+      "group": "stay_home",
+      "tags": [
+        "hobby",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/watch_ott.png",
+      "cg_brief": "소파에서 태블릿/TV를 보며 웃는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "밀린 드라마를 보며 주말을 흘려보낸다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "딱 한 편만 볼까? 나는 스스로에게 아주 약한 약속을 걸고 재생 버튼을 눌렀다.",
+        "다음 화 버튼은 너무 자연스럽게 나타났고, 내 손은 너무 쉽게 움직였다.",
+        "현실은 돌아왔지만 웃을 장면이 몇 개 남았다."
+      ],
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": 0,
+        "mood_delta": [
+          8,
+          12
+        ],
+        "fatigue_delta": [
+          -6,
+          -2
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "study_market",
+      "name_ko": "투자 공부",
+      "group": "stay_home",
+      "tags": [
+        "productive",
+        "money"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/study_market.png",
+      "cg_brief": "노트북 차트와 공시 자료를 보는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "차트와 공시를 읽으며 하루를 보낸다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "오늘은 차트를 조금 더 봐두자. 적어도 내가 뭘 모르는지는 알아야 했다.",
+        "실적 발표, 배당, 부채비율 같은 단어들이 처음엔 남의 나라 말처럼 보였다.",
+        "당장 돈이 늘진 않았지만 다음 선택이 조금 덜 무섭다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "cook_home",
+      "name_ko": "집밥 해먹기",
+      "group": "stay_home",
+      "tags": [
+        "food",
+        "health"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/cook_home.png",
+      "cg_brief": "앞치마를 하고 프라이팬 앞에 선 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "배달앱 대신 냉장고 재료로 한 끼를 만든다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "오늘은 배달앱을 이겨보자. 냉장고 속 재료들이 구조 요청을 보내는 것처럼 놓여 있었다.",
+        "양파를 썰다가 눈물이 났고, 프라이팬에서는 생각보다 그럴듯한 소리가 났다.",
+        "설거지가 산처럼 남았지만, 배는 든든했다."
+      ],
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": [
+          4,
+          6
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          8,
+          12
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "big_cleaning",
+      "name_ko": "대청소",
+      "group": "stay_home",
+      "tags": [
+        "routine",
+        "high_fatigue"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/big_cleaning.png",
+      "cg_brief": "먼지와 박스 사이에서 대청소",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "미뤄둔 생활을 한꺼번에 정리한다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "그냥 청소가 아니라 대청소다. 오늘의 적은 먼지와 미뤄둔 생활이다.",
+        "서랍 깊은 곳에서 오래된 영수증과 잊고 있던 동전이 나왔다.",
+        "몸은 축났지만 방 안의 공기가 달라졌다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          11,
+          17
+        ],
+        "fatigue_delta": [
+          20,
+          28
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "laundry",
+      "name_ko": "빨래하기",
+      "group": "stay_home",
+      "tags": [
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/laundry.png",
+      "cg_brief": "빨래를 개거나 널고 있는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "밀린 빨래를 돌리고 널며 생활을 정돈한다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "빨래 바구니가 조용히 한계를 넘고 있었다.",
+        "세탁기가 돌아가는 낮은 소리가 방을 채웠다.",
+        "내일 입을 옷이 준비되어 있다는 사실만으로도 이상하게 안심됐다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          4,
+          6
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "budget_review",
+      "name_ko": "가계부 정리",
+      "group": "stay_home",
+      "tags": [
+        "money",
+        "productive"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/budget_review.png",
+      "cg_brief": "영수증과 가계부 앱을 보며 고민",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "소비 내역을 보며 돈이 새는 곳을 확인한다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "계좌 앱을 열기 전부터 마음이 살짝 무거웠다.",
+        "커피, 택시, 편의점, 또 커피. 작게 새어 나간 돈들이 한 줄로 섰다.",
+        "기분이 좋아진 건 아니지만, 어디서 줄여야 할지 알게 됐다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -3,
+          -1
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "half_bath",
+      "name_ko": "반신욕",
+      "group": "stay_home",
+      "tags": [
+        "recovery",
+        "selfcare"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/half_bath.png",
+      "cg_brief": "따뜻한 욕실, 목욕용품, 편안한 표정",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "따뜻한 물에 몸을 풀며 긴장을 낮춘다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "욕조에 따뜻한 물을 받았다.",
+        "어깨까지 긴장이 풀리자 머릿속 숫자들도 잠깐 김처럼 흐려졌다.",
+        "세계적인 투자 원칙은 몰라도, 따뜻한 물은 꽤 확실한 수익을 준다."
+      ],
+      "effects": {
+        "cash_delta": -5000,
+        "health_delta": [
+          4,
+          8
+        ],
+        "mood_delta": [
+          8,
+          12
+        ],
+        "fatigue_delta": [
+          -20,
+          -12
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "home_workout",
+      "name_ko": "홈트레이닝",
+      "group": "stay_home",
+      "tags": [
+        "health",
+        "high_fatigue"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/home_workout.png",
+      "cg_brief": "운동 매트 위에서 힘들어하는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "집에서 운동하며 체력을 챙긴다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "운동복으로 갈아입는 것까지는 늘 자신 있다. 문제는 그다음이다.",
+        "영상 속 강사는 웃으면서 한 세트를 더 외쳤고, 나는 웃지 못했다.",
+        "다리는 후들거렸지만 몸이 내 편으로 돌아오는 느낌이 들었다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          6,
+          10
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          14,
+          22
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "play_game",
+      "name_ko": "게임하기",
+      "group": "stay_home",
+      "tags": [
+        "hobby",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/play_game.png",
+      "cg_brief": "컨트롤러를 들고 게임에 몰입",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "조작 가능한 세계로 잠깐 도망간다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "오늘은 내가 조작할 수 있는 세계로 도망가자.",
+        "퀘스트 하나만 하고 끄려 했는데, 퀘스트는 언제나 다음 퀘스트를 데리고 온다.",
+        "현실 계좌도 이렇게 경험치가 보이면 좋을 텐데."
+      ],
+      "effects": {
+        "cash_delta": -10000,
+        "health_delta": [
+          -2,
+          -1
+        ],
+        "mood_delta": [
+          11,
+          17
+        ],
+        "fatigue_delta": [
+          4,
+          8
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "read_book",
+      "name_ko": "책 읽기",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "hobby"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/read_book.png",
+      "cg_brief": "쿠션에 기대 책을 읽는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "숫자 대신 문장을 따라가며 마음을 환기한다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "책장을 넘기는 소리는 차트 알림보다 훨씬 부드럽다.",
+        "남의 인생에 잠깐 기대어 걷는 동안 내 고민도 조금 거리를 두고 보였다.",
+        "돈이 되지 않는 시간도 가끔은 사람을 살린다."
+      ],
+      "effects": {
+        "cash_delta": -15000,
+        "health_delta": 0,
+        "mood_delta": [
+          6,
+          10
+        ],
+        "fatigue_delta": [
+          4,
+          6
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "early_sleep",
+      "name_ko": "일찍 자기",
+      "group": "stay_home",
+      "tags": [
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/early_sleep.png",
+      "cg_brief": "밤, 휴대폰을 뒤집어두고 잠드는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "밤을 길게 쓰지 않고 내일의 체력을 산다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "오늘은 밤을 길게 쓰지 않기로 했다.",
+        "휴대폰을 뒤집어 놓자 방이 금방 조용해졌다.",
+        "일찍 잔다는 건 내일의 나에게 미리 사과하는 일 같다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          8,
+          12
+        ],
+        "mood_delta": [
+          2,
+          4
+        ],
+        "fatigue_delta": [
+          -32,
+          -24
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "blank_time",
+      "name_ko": "멍때리기",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/blank_time.png",
+      "cg_brief": "창밖을 보며 멍하게 앉은 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "아무것도 하지 않는 시간을 보낸다.",
+      "mode": "choice_closed",
+      "category_id": "stay_home",
+      "category_ko": "집에 있기",
+      "dialogue": [
+        "뭘 해야 할지 모르겠어서, 그냥 아무것도 하지 않기로 했다.",
+        "창밖을 보며 지나가는 구름을 셌다.",
+        "머릿속에 꽉 찬 소음이 조금 낮아졌다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          3
+        ],
+        "mood_delta": [
+          3,
+          5
+        ],
+        "fatigue_delta": [
+          -13,
+          -7
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "fridge_cleanout",
+      "name_ko": "냉장고 정리",
+      "group": "stay_home",
+      "tags": [
+        "routine",
+        "food"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/fridge_cleanout.png",
+      "cg_brief": "냉장고 앞에서 식재료를 정리",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "냉장고 정리",
+      "dialogue": [
+        "냉장고 문을 열자 차가운 공기보다 먼저 오래된 결심들이 나왔다.",
+        "사 둔 기억은 있는데 먹은 기억은 없는 재료들이 구석에서 조용히 말라가고 있었다.",
+        "버릴 것과 살릴 것을 나누다 보니 지갑도 냉장고도 비슷하게 관리가 필요하다는 생각이 들었다.",
+        "냉장고가 조금 비워지자 이상하게 머릿속도 조금 정리됐다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          3
+        ],
+        "mood_delta": [
+          3,
+          6
+        ],
+        "fatigue_delta": [
+          5,
+          9
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 열린 냉장고 앞에서 반찬통과 시든 채소를 정리하는 치비풍 2D 이벤트 CG, 따뜻하고 여성스러운 작은 원룸 주방, 스마트폰 세로 구도"
+    },
+    {
+      "id": "meal_prep",
+      "name_ko": "밀프렙 만들기",
+      "group": "stay_home",
+      "tags": [
+        "food",
+        "productive"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/meal_prep.png",
+      "cg_brief": "반찬통 여러 개를 채우는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "밀프렙 만들기",
+      "dialogue": [
+        "평일의 나를 구원하겠다는 마음으로 반찬통을 꺼냈다.",
+        "밥을 나누고 반찬을 담는 일은 생각보다 작고 성실한 미래 투자 같았다.",
+        "물론 설거지거리는 눈덩이처럼 불어났다. 수익에는 늘 비용이 따라온다.",
+        "그래도 냉장고 안에 며칠치 안전망이 생겼다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -18000,
+        "health_delta": [
+          4,
+          7
+        ],
+        "mood_delta": [
+          3,
+          7
+        ],
+        "fatigue_delta": [
+          10,
+          16
+        ]
+      },
+      "image_prompt": "홈웨어와 앞치마를 입은 주인공이 여러 반찬통에 밥과 반찬을 담는 치비풍 2D 이벤트 CG, 작은 주방 조리대, 깔끔한 색감, 스마트폰 세로 구도"
+    },
+    {
+      "id": "closet_sort",
+      "name_ko": "옷장 정리",
+      "group": "stay_home",
+      "tags": [
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/closet_sort.png",
+      "cg_brief": "옷더미와 행거 앞에서 정리",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "옷장 정리",
+      "dialogue": [
+        "옷장을 열자 입을 옷이 없다는 말이 얼마나 이상한 문장인지 알 수 있었다.",
+        "옷은 많았다. 문제는 지금의 나와 사이가 어색한 옷들이 너무 많다는 점이었다.",
+        "안 입는 옷을 접어내자 출근 준비가 조금은 덜 전쟁처럼 보였다.",
+        "정리된 옷장 앞에서 내일의 내가 조금 고마워할 것 같았다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -1,
+          1
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 옷장 앞에서 옷더미와 행거를 정리하는 치비풍 2D 이벤트 CG, 포근한 방, 옷걸이와 수납박스, 스마트폰 세로 구도"
+    },
+    {
+      "id": "desk_makeover",
+      "name_ko": "책상 새로 꾸미기",
+      "group": "stay_home",
+      "tags": [
+        "routine",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/desk_makeover.png",
+      "cg_brief": "스티커와 조명으로 책상 배치 변경",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "책상 새로 꾸미기",
+      "dialogue": [
+        "책상 위 물건들을 전부 밀어내고 새로 자리를 잡아봤다.",
+        "모니터 각도 하나, 조명 위치 하나에도 기분이 조금씩 달라졌다.",
+        "돈이 크게 든 건 아니지만 공간이 나를 대하는 태도가 바뀐 느낌이었다.",
+        "내일 차트를 볼 때도 조금은 덜 지친 얼굴로 앉을 수 있겠다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": 0,
+        "mood_delta": [
+          8,
+          12
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "image_prompt": "주인공이 작은 책상 위 조명, 스티커, 필기구를 재배치하는 치비풍 2D 이벤트 CG, 귀엽고 단정한 홈 오피스 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "plant_care",
+      "name_ko": "화분 돌보기",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/plant_care.png",
+      "cg_brief": "작은 화분에 물을 주는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "화분 돌보기",
+      "dialogue": [
+        "창가 화분의 흙이 살짝 말라 있었다.",
+        "물을 천천히 부으니 잎이 대답이라도 하듯 조금 반짝이는 것 같았다.",
+        "자라는 일은 조용하고 느리다. 계좌도 마음도 아마 그런 쪽이면 좋겠다.",
+        "작은 초록색이 방 안의 공기를 조금 바꿔놓았다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          3
+        ],
+        "mood_delta": [
+          5,
+          9
+        ],
+        "fatigue_delta": [
+          -6,
+          -2
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 창가 작은 화분에 물을 주는 치비풍 2D 이벤트 CG, 햇살 드는 방, 초록 식물과 따뜻한 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "balcony_airing",
+      "name_ko": "베란다 바람쐬기",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/balcony_airing.png",
+      "cg_brief": "베란다에서 바람을 맞으며 쉬기",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "베란다 바람쐬기",
+      "dialogue": [
+        "멀리 나갈 힘은 없어서 베란다 문만 열었다.",
+        "바깥 공기가 방 안으로 들어오자 가만히 있던 생각들도 조금 움직였다.",
+        "대단한 풍경은 아니었다. 그래도 내가 사는 곳 밖에 세상이 있다는 확인이 됐다.",
+        "잠깐의 바람만으로도 하루가 덜 눅눅해졌다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          4
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          -8,
+          -3
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 작은 베란다에서 머리를 식히며 바깥 풍경을 보는 치비풍 2D 이벤트 CG, 원룸 베란다, 부드러운 낮빛, 스마트폰 세로 구도"
+    },
+    {
+      "id": "diary_write",
+      "name_ko": "일기 쓰기",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "selfcare"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/diary_write.png",
+      "cg_brief": "다이어리에 하루 생각을 적는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "일기 쓰기",
+      "dialogue": [
+        "오늘은 돈도 차트도 잠깐 빼고 내 얘기부터 적기로 했다.",
+        "막상 펜을 들면 별일 없던 하루에도 이상하게 문장이 생겼다.",
+        "힘들었다고 쓰는 것만으로도 힘든 일이 조금 바깥으로 나가는 느낌이었다.",
+        "계좌에는 변화가 없지만 마음의 잔고는 조금 정리됐다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          5,
+          10
+        ],
+        "fatigue_delta": [
+          2,
+          5
+        ]
+      },
+      "image_prompt": "주인공이 작은 책상에서 다이어리에 글을 쓰는 치비풍 2D 이벤트 CG, 펜과 스티커, 따뜻한 방 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "online_course",
+      "name_ko": "온라인 강의 듣기",
+      "group": "stay_home",
+      "tags": [
+        "productive",
+        "study"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/online_course.png",
+      "cg_brief": "노트북 강의와 필기 노트",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "온라인 강의 듣기",
+      "dialogue": [
+        "강의 재생 버튼을 누르자 주말의 공기가 살짝 딱딱해졌다.",
+        "강사는 쉽게 설명했지만 쉬운 설명을 이해하는 일은 별개였다.",
+        "모르는 단어를 검색하고 노트에 적다 보니 시간이 생각보다 빨리 갔다.",
+        "당장 월급이 오르진 않겠지만 오늘의 나는 조금 덜 제자리였다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -20000,
+        "health_delta": 0,
+        "mood_delta": [
+          2,
+          6
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "주인공이 노트북 온라인 강의를 보며 필기하는 치비풍 2D 이벤트 CG, 홈웨어, 작은 책상, 강의 화면과 노트, 스마트폰 세로 구도"
+    },
+    {
+      "id": "resume_update",
+      "name_ko": "이력서 정리",
+      "group": "stay_home",
+      "tags": [
+        "productive",
+        "career"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/resume_update.png",
+      "cg_brief": "이력서 파일을 보며 한숨 쉬는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "이력서 정리",
+      "dialogue": [
+        "이력서 파일을 열자 내가 해온 일들이 생각보다 낯설게 보였다.",
+        "대단하지 않다고 넘겼던 업무도 문장으로 바꾸니 조금은 형태가 생겼다.",
+        "동시에 이 정도로 괜찮을까 하는 마음도 같이 올라왔다.",
+        "아직 지원 버튼은 못 눌렀지만, 도망갈 문 하나를 닦아둔 기분이었다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -3,
+          3
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "주인공이 노트북 이력서 문서를 보며 고민하는 치비풍 2D 이벤트 CG, 커피잔, 메모지, 약간 진지한 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "portfolio_review",
+      "name_ko": "포트폴리오 정리",
+      "group": "stay_home",
+      "tags": [
+        "productive",
+        "career"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/portfolio_review.png",
+      "cg_brief": "업무 자료와 포트폴리오를 정리",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "포트폴리오 정리",
+      "dialogue": [
+        "폴더 이름이 제각각인 파일들을 한곳에 모았다.",
+        "내가 만든 것들인데도 설명을 붙이려니 괜히 부끄러웠다.",
+        "그래도 지나간 시간들이 완전히 사라진 건 아니라는 증거가 화면에 쌓였다.",
+        "오늘은 돈 대신 내가 한 일을 조금 모았다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          1,
+          6
+        ],
+        "fatigue_delta": [
+          12,
+          20
+        ]
+      },
+      "image_prompt": "주인공이 업무 자료와 포트폴리오 폴더를 정리하는 치비풍 2D 이벤트 CG, 노트북과 문서 더미, 진지하지만 귀여운 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "receipt_sorting",
+      "name_ko": "영수증 분류",
+      "group": "stay_home",
+      "tags": [
+        "money",
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/receipt_sorting.png",
+      "cg_brief": "영수증을 카테고리별로 나누는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "영수증 분류",
+      "dialogue": [
+        "지갑 속 영수증을 꺼내자 종이 조각들이 작은 고백처럼 펼쳐졌다.",
+        "커피는 커피끼리, 편의점은 편의점끼리, 변명은 변명끼리 모였다.",
+        "하나씩 보면 별것 아닌 금액들이 합쳐지자 제법 큰 목소리를 냈다.",
+        "기분은 조금 가라앉았지만 돈이 새는 구멍 하나는 찾았다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -4,
+          1
+        ],
+        "fatigue_delta": [
+          6,
+          12
+        ]
+      },
+      "image_prompt": "주인공이 테이블 위 영수증을 식비, 교통비, 쇼핑으로 분류하는 치비풍 2D 이벤트 CG, 계산기와 노트, 현실적인 생활감, 스마트폰 세로 구도"
+    },
+    {
+      "id": "coupon_hunt",
+      "name_ko": "쿠폰 찾기",
+      "group": "stay_home",
+      "tags": [
+        "money",
+        "food"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/coupon_hunt.png",
+      "cg_brief": "배달앱 쿠폰을 비교하며 고민",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "쿠폰 찾기",
+      "dialogue": [
+        "배달앱을 켜자 수많은 할인 문구가 나를 반겼다.",
+        "할인받으려고 들어왔는데, 먹고 싶은 메뉴가 점점 늘어나는 기묘한 일이 벌어졌다.",
+        "한참을 비교한 끝에 가장 덜 위험한 선택을 골랐다.",
+        "절약을 한 건지 소비를 정당화한 건지는 내일의 내가 판단하기로 했다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -8000,
+        "health_delta": [
+          -1,
+          1
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "주인공이 휴대폰 배달앱 쿠폰 화면을 보며 진지하게 비교하는 치비풍 2D 이벤트 CG, 소파와 작은 테이블, 스마트폰 세로 구도"
+    },
+    {
+      "id": "secondhand_listing",
+      "name_ko": "중고거래 올리기",
+      "group": "stay_home",
+      "tags": [
+        "money",
+        "productive"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/secondhand_listing.png",
+      "cg_brief": "물건 사진을 찍어 중고거래 앱에 올림",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "중고거래 올리기",
+      "dialogue": [
+        "안 쓰는 물건들을 모아보니 작은 가게 하나가 열릴 것 같았다.",
+        "사진은 생각보다 중요했다. 같은 물건도 각도에 따라 성의가 달라 보였다.",
+        "설명을 쓰고 가격을 정하는 동안 지난 소비의 그림자가 살짝 보였다.",
+        "알림이 울리자 방 한구석의 물건이 현금으로 바뀔 가능성이 생겼다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": 20000,
+        "health_delta": 0,
+        "mood_delta": [
+          3,
+          8
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "주인공이 팔 물건을 조명 아래 놓고 휴대폰으로 사진 찍는 치비풍 2D 이벤트 CG, 박스와 택배봉투, 생활감 있는 방, 스마트폰 세로 구도"
+    },
+    {
+      "id": "skincare_home",
+      "name_ko": "홈케어 하기",
+      "group": "stay_home",
+      "tags": [
+        "selfcare",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/skincare_home.png",
+      "cg_brief": "팩을 붙이고 거울 앞에 앉은 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "홈케어 하기",
+      "dialogue": [
+        "오늘은 얼굴이라도 내 편으로 만들어보기로 했다.",
+        "팩을 붙이고 거울을 보니 조금 우스웠지만 그 우스움마저 나쁘지 않았다.",
+        "가만히 기다리는 15분 동안 휴대폰도 계좌도 잠깐 멀어졌다.",
+        "피부가 드라마틱하게 바뀐 건 아니지만 나를 챙겼다는 감각은 남았다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -7000,
+        "health_delta": [
+          1,
+          3
+        ],
+        "mood_delta": [
+          7,
+          12
+        ],
+        "fatigue_delta": [
+          -6,
+          -1
+        ]
+      },
+      "image_prompt": "주인공이 귀여운 헤어밴드와 얼굴팩을 하고 거울 앞에 앉은 치비풍 2D 이벤트 CG, 화장대와 스킨케어 소품, 스마트폰 세로 구도"
+    },
+    {
+      "id": "stretch_yoga",
+      "name_ko": "스트레칭 요가",
+      "group": "stay_home",
+      "tags": [
+        "health",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/stretch_yoga.png",
+      "cg_brief": "요가 매트 위에서 조용히 스트레칭",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "스트레칭 요가",
+      "dialogue": [
+        "매트를 깔고 몸을 천천히 접었다 폈다.",
+        "평일 내내 굳어 있던 어깨가 작은 소리로 항의했다.",
+        "숨을 길게 내쉬자 머릿속 숫자들도 잠깐 느려졌다.",
+        "몸이 완전히 가벼워진 건 아니지만, 오늘은 나를 망가뜨리지만은 않은 하루가 됐다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          5,
+          9
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          -12,
+          -4
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 요가 매트 위에서 스트레칭하는 치비풍 2D 이벤트 CG, 부드러운 햇살과 차분한 방, 스마트폰 세로 구도"
+    },
+    {
+      "id": "meditation",
+      "name_ko": "명상하기",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/meditation.png",
+      "cg_brief": "방석 위에 앉아 눈을 감은 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "명상하기",
+      "dialogue": [
+        "아무것도 하지 않기 위해 자세를 잡았다.",
+        "처음엔 잡생각이 더 크게 들렸다. 내일 장은 열릴까, 돈은 괜찮을까, 저녁은 뭘 먹을까.",
+        "그래도 몇 번 숨을 세다 보니 생각들이 조금 멀찍이 앉았다.",
+        "문제는 그대로였지만 문제를 보는 내가 조금 덜 흔들렸다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          4
+        ],
+        "mood_delta": [
+          5,
+          10
+        ],
+        "fatigue_delta": [
+          -10,
+          -4
+        ]
+      },
+      "image_prompt": "주인공이 작은 방석 위에 앉아 눈을 감고 명상하는 치비풍 2D 이벤트 CG, 조용한 방, 은은한 햇살과 식물, 스마트폰 세로 구도"
+    },
+    {
+      "id": "puzzle_time",
+      "name_ko": "퍼즐 맞추기",
+      "group": "stay_home",
+      "tags": [
+        "hobby",
+        "calm"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/puzzle_time.png",
+      "cg_brief": "테이블 위 퍼즐 조각과 집중한 표정",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "퍼즐 맞추기",
+      "dialogue": [
+        "퍼즐 상자를 열자 작은 조각들이 쏟아졌다.",
+        "당장 맞지 않는 조각도 언젠가는 자리가 있다는 점이 조금 위로가 됐다.",
+        "차트는 내 마음대로 움직이지 않지만 이 조각 하나만큼은 내가 맞출 수 있었다.",
+        "완성은 멀었지만 테이블 위에는 분명히 그림이 생기고 있었다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -10000,
+        "health_delta": 0,
+        "mood_delta": [
+          6,
+          11
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "주인공이 낮은 테이블 위 퍼즐 조각을 맞추는 치비풍 2D 이벤트 CG, 조용한 방과 차 한 잔, 집중한 귀여운 표정, 스마트폰 세로 구도"
+    },
+    {
+      "id": "baking_cookies",
+      "name_ko": "쿠키 굽기",
+      "group": "stay_home",
+      "tags": [
+        "food",
+        "hobby"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/baking_cookies.png",
+      "cg_brief": "오븐 앞 쿠키 반죽과 설레는 표정",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "쿠키 굽기",
+      "dialogue": [
+        "밀가루와 버터를 꺼내자 주방이 갑자기 작은 실험실처럼 보였다.",
+        "반죽은 손에 묻고 모양은 제각각이었지만 그게 또 귀여웠다.",
+        "오븐에서 달콤한 냄새가 퍼지자 오늘의 피곤함이 조금 느슨해졌다.",
+        "완벽한 쿠키는 아니어도 내 손으로 만든 달콤한 수익이었다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -15000,
+        "health_delta": [
+          -1,
+          1
+        ],
+        "mood_delta": [
+          9,
+          15
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "주인공이 쿠키 반죽을 만들고 오븐 앞에서 기다리는 치비풍 2D 이벤트 CG, 달콤한 주방 분위기, 앞치마와 베이킹 도구, 스마트폰 세로 구도"
+    },
+    {
+      "id": "homemade_coffee",
+      "name_ko": "홈카페",
+      "group": "stay_home",
+      "tags": [
+        "food",
+        "calm"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/homemade_coffee.png",
+      "cg_brief": "직접 내린 커피와 작은 디저트",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "홈카페",
+      "dialogue": [
+        "카페 대신 집에서 커피를 내려보기로 했다.",
+        "물을 붓는 속도와 향이 퍼지는 시간을 괜히 진지하게 바라봤다.",
+        "밖에서 사 마시는 커피보다 화려하진 않지만 내 자리에서 오래 마실 수 있었다.",
+        "작은 절약과 작은 사치가 같은 컵 안에 들어 있었다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -5000,
+        "health_delta": 0,
+        "mood_delta": [
+          5,
+          9
+        ],
+        "fatigue_delta": [
+          -4,
+          2
+        ]
+      },
+      "image_prompt": "주인공이 집에서 커피를 내리고 작은 디저트를 곁들이는 치비풍 2D 이벤트 CG, 창가 테이블과 예쁜 머그컵, 스마트폰 세로 구도"
+    },
+    {
+      "id": "call_family",
+      "name_ko": "가족과 통화",
+      "group": "stay_home",
+      "tags": [
+        "social",
+        "calm"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/call_family.png",
+      "cg_brief": "휴대폰 통화, 살짝 난감하지만 따뜻한 표정",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "가족과 통화",
+      "dialogue": [
+        "가족에게서 전화가 왔다. 받을까 말까 고민하다가 결국 통화 버튼을 눌렀다.",
+        "밥은 먹었냐는 질문은 늘 같은 모양으로 도착했다.",
+        "잔소리와 걱정의 경계가 흐려서 중간중간 웃음이 나왔다.",
+        "전화를 끊고 나니 방은 그대로였지만 혼자 있는 느낌은 조금 옅어졌다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -2,
+          8
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 침대 가장자리에 앉아 가족과 영상통화하는 치비풍 2D 이벤트 CG, 살짝 난감하지만 따뜻한 표정, 스마트폰 세로 구도"
+    },
+    {
+      "id": "room_redecorate",
+      "name_ko": "방 분위기 바꾸기",
+      "group": "stay_home",
+      "tags": [
+        "mood",
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/room_redecorate.png",
+      "cg_brief": "침구와 조명을 바꾸는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "방 분위기 바꾸기",
+      "dialogue": [
+        "방을 크게 바꿀 돈은 없어서 침구와 조명부터 손봤다.",
+        "작은 전구 하나가 켜지자 익숙한 방도 다른 표정을 했다.",
+        "내 삶 전체를 바꾸진 못해도 오늘 누울 자리 정도는 바꿀 수 있었다.",
+        "방이 조금 예뻐지자 나도 조금 더 괜찮은 사람처럼 느껴졌다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -25000,
+        "health_delta": 0,
+        "mood_delta": [
+          10,
+          16
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "주인공이 침구와 작은 조명을 바꿔 방 분위기를 꾸미는 치비풍 2D 이벤트 CG, 사랑스럽고 포근한 원룸, 스마트폰 세로 구도"
+    },
+    {
+      "id": "rainy_window_reading",
+      "name_ko": "비 오는 날 독서",
+      "group": "stay_home",
+      "tags": [
+        "rainy",
+        "calm"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/rainy_window_reading.png",
+      "cg_brief": "비 오는 창가에서 책을 읽는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "비 오는 날 독서",
+      "dialogue": [
+        "창문에 빗방울이 고르게 부딪혔다.",
+        "밖에 나가지 않는 핑계가 이렇게 완벽한 날도 드물다.",
+        "책장을 넘기는 소리와 빗소리가 겹치자 마음이 천천히 가라앉았다.",
+        "오늘은 아무것도 놓치지 않은 것처럼 조용히 쉬었다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          7,
+          12
+        ],
+        "fatigue_delta": [
+          -8,
+          -2
+        ]
+      },
+      "image_prompt": "비 오는 창가 옆에서 주인공이 담요를 덮고 책을 읽는 치비풍 2D 이벤트 CG, 빗방울 맺힌 창문과 따뜻한 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "digital_detox",
+      "name_ko": "디지털 디톡스",
+      "group": "stay_home",
+      "tags": [
+        "calm",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/digital_detox.png",
+      "cg_brief": "꺼진 휴대폰과 조용한 방",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "디지털 디톡스",
+      "dialogue": [
+        "휴대폰을 뒤집어놓자 방이 예상보다 조용해졌다.",
+        "처음 몇 분은 오히려 불안했다. 아무 알림도 없는데 계속 확인하고 싶었다.",
+        "시간이 지나자 내 생각의 속도가 화면보다 조금 늦어졌다.",
+        "세상은 잠깐 확인하지 않아도 무너지지 않았다. 나도 그랬다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          4
+        ],
+        "mood_delta": [
+          4,
+          9
+        ],
+        "fatigue_delta": [
+          -14,
+          -6
+        ]
+      },
+      "image_prompt": "꺼진 휴대폰을 테이블 위에 뒤집어두고 주인공이 조용히 차를 마시는 치비풍 2D 이벤트 CG, 알림 없는 평온한 방, 스마트폰 세로 구도"
+    },
+    {
+      "id": "photo_backup",
+      "name_ko": "사진 백업하기",
+      "group": "stay_home",
+      "tags": [
+        "routine",
+        "memory"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/photo_backup.png",
+      "cg_brief": "오래된 사진을 보며 백업하는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "사진 백업하기",
+      "dialogue": [
+        "휴대폰 저장공간이 부족하다는 알림이 떴다.",
+        "사진을 옮기다 보니 잊고 있던 날들이 작은 사각형으로 줄지어 나왔다.",
+        "힘들었던 날에도 웃긴 사진 하나쯤은 남아 있었다는 게 이상했다.",
+        "정리한 건 파일인데, 어쩐지 지난 시간도 조금 백업된 기분이었다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          3,
+          8
+        ],
+        "fatigue_delta": [
+          5,
+          10
+        ]
+      },
+      "image_prompt": "주인공이 노트북으로 오래된 휴대폰 사진을 정리하고 백업하는 치비풍 2D 이벤트 CG, 추억 사진 썸네일과 외장하드, 스마트폰 세로 구도"
+    },
+    {
+      "id": "closet_repair",
+      "name_ko": "옷 수선하기",
+      "group": "stay_home",
+      "tags": [
+        "routine",
+        "money"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/closet_repair.png",
+      "cg_brief": "단추를 달거나 바느질하는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "옷 수선하기",
+      "dialogue": [
+        "단추 하나가 떨어진 옷을 계속 못 본 척하고 있었다.",
+        "바늘에 실을 꿰는 일부터 생각보다 집중력이 필요했다.",
+        "새로 사는 대신 고쳐 입는 선택은 조금 느리지만 꽤 단단했다.",
+        "작은 단추가 제자리로 돌아가자 내 생활도 아주 조금 수선된 것 같았다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          5,
+          10
+        ]
+      },
+      "image_prompt": "주인공이 작은 바느질 키트로 단추를 달거나 옷을 수선하는 치비풍 2D 이벤트 CG, 침대 위 옷과 실타래, 스마트폰 세로 구도"
+    },
+    {
+      "id": "emergency_kit_check",
+      "name_ko": "비상약 정리",
+      "group": "stay_home",
+      "tags": [
+        "health",
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekend/stay_home/emergency_kit_check.png",
+      "cg_brief": "약상자와 체온계, 유통기한 확인",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "비상약 정리",
+      "dialogue": [
+        "약상자를 열자 유통기한이 지난 약들이 조용히 발견됐다.",
+        "아플 때 찾으려고 둔 것들이 정작 필요할 때 쓸 수 없다면 꽤 곤란하다.",
+        "부족한 약을 메모하고 낡은 밴드를 버리니 괜히 든든해졌다.",
+        "건강은 아프고 나서야 챙기기엔 너무 비싼 자산이다."
+      ],
+      "category_id": "stay_home",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -10000,
+        "health_delta": [
+          4,
+          8
+        ],
+        "mood_delta": [
+          2,
+          5
+        ],
+        "fatigue_delta": [
+          4,
+          8
+        ]
+      },
+      "image_prompt": "주인공이 약상자, 체온계, 밴드, 감기약을 꺼내 유통기한을 확인하는 치비풍 2D 이벤트 CG, 깔끔한 테이블과 홈웨어, 스마트폰 세로 구도"
+    },
+    {
+      "id": "part_time",
+      "name_ko": "알바하기",
+      "group": "go_out",
+      "tags": [
+        "income",
+        "high_fatigue"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/part_time.png",
+      "cg_brief": "카페/매장 알바 중인 주인공",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "쉬는 날 단기 알바를 한다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "쉬는 날이지만 알바 앱을 열었다. 돈이 필요한 날에는 휴일도 얌전히 쉬어주지 않는다.",
+        "짧은 근무라고 했지만, 시간은 일할 때 더 천천히 흘렀다.",
+        "몸은 축났지만 입금 예정이라는 말이 오늘 하루를 겨우 납득시켰다."
+      ],
+      "effects": {
+        "cash_delta": 70000,
+        "health_delta": [
+          -6,
+          -2
+        ],
+        "mood_delta": [
+          -10,
+          -6
+        ],
+        "fatigue_delta": [
+          18,
+          26
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "play_outside",
+      "name_ko": "놀러가기",
+      "group": "go_out",
+      "tags": [
+        "mood",
+        "outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/play_outside.png",
+      "cg_brief": "번화가를 걷는 활기찬 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "밖에서 기분 전환을 한다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "오늘은 집 밖으로 나가보기로 했다. 문을 닫는 소리만으로도 하루의 색이 조금 바뀌었다.",
+        "딱히 대단한 목적지는 없었다. 그래도 다른 공기를 마시는 것만으로 충분한 날이 있다.",
+        "돈은 조금 썼지만, 마음이 다시 사람 사는 쪽으로 돌아왔다."
+      ],
+      "effects": {
+        "cash_delta": -45000,
+        "health_delta": 0,
+        "mood_delta": [
+          18,
+          26
+        ],
+        "fatigue_delta": [
+          -10,
+          -6
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "walk_nearby",
+      "name_ko": "산책하기",
+      "group": "go_out",
+      "tags": [
+        "recovery",
+        "light_outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/walk_nearby.png",
+      "cg_brief": "동네 산책로를 걷는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "동네를 걸으며 머리를 식힌다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "잠깐 걷고 오자. 집 안에만 있으면 생각이 자꾸 같은 벽에 부딪힌다.",
+        "동네 가로수 그림자가 생각보다 길었다.",
+        "몸이 움직이니 마음도 아주 조금 따라 움직였다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          2,
+          4
+        ],
+        "mood_delta": [
+          6,
+          10
+        ],
+        "fatigue_delta": [
+          3,
+          5
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "short_trip",
+      "name_ko": "근거리 여행",
+      "group": "go_out",
+      "tags": [
+        "expensive",
+        "travel"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/short_trip.png",
+      "cg_brief": "기차역/버스 창밖을 보는 당일치기 여행",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "가까운 곳으로 당일치기 기분전환을 간다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "오늘은 조금 멀리 나가볼까? 낯선 안내방송을 듣고 싶었다.",
+        "창밖 풍경이 바뀔 때마다 마음도 조금씩 다른 표정을 했다.",
+        "내 생활 반경이 월급과 회사 근처만은 아니라는 걸 확인했다."
+      ],
+      "effects": {
+        "cash_delta": -70000,
+        "health_delta": [
+          1,
+          3
+        ],
+        "mood_delta": [
+          18,
+          26
+        ],
+        "fatigue_delta": [
+          14,
+          22
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "cinema",
+      "name_ko": "영화관",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/cinema.png",
+      "cg_brief": "팝콘을 들고 영화관 앞에 선 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "영화 한 편으로 현실을 잠깐 잊는다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "영화 한 편 정도는 괜찮겠지.",
+        "상영관 불이 꺼지자 현실도 잠깐 작아졌다.",
+        "머릿속 공기가 바뀐 것만으로 충분했다."
+      ],
+      "effects": {
+        "cash_delta": -18000,
+        "health_delta": 0,
+        "mood_delta": [
+          10,
+          16
+        ],
+        "fatigue_delta": [
+          4,
+          6
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "karaoke",
+      "name_ko": "노래방",
+      "group": "go_out",
+      "tags": [
+        "mood",
+        "stress_relief"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/karaoke.png",
+      "cg_brief": "마이크를 들고 열창하는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "목이 쉬도록 노래하며 스트레스를 푼다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "오늘은 목 좀 써도 되겠지.",
+        "마지막 곡이라고 눌렀는데, 마지막 곡은 세 번쯤 있었다.",
+        "점수보다 중요한 건 오늘 내가 목소리를 냈다는 사실이었다."
+      ],
+      "effects": {
+        "cash_delta": -25000,
+        "health_delta": [
+          -2,
+          -1
+        ],
+        "mood_delta": [
+          14,
+          22
+        ],
+        "fatigue_delta": [
+          7,
+          11
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "cafe",
+      "name_ko": "카페 가기",
+      "group": "go_out",
+      "tags": [
+        "calm",
+        "light_outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/cafe.png",
+      "cg_brief": "카페 창가에서 커피와 노트북",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "커피 한 잔으로 집과 회사가 아닌 자리를 빌린다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "커피 한 잔 값으로 자리를 빌리러 가자.",
+        "옆자리 사람들은 각자의 노트북과 각자의 고민을 펼쳐두고 있었다.",
+        "커피는 금방 식었지만 마음은 조금 데워졌다."
+      ],
+      "effects": {
+        "cash_delta": -9000,
+        "health_delta": 0,
+        "mood_delta": [
+          7,
+          11
+        ],
+        "fatigue_delta": [
+          1,
+          3
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "meet_friend",
+      "name_ko": "친구 만나기",
+      "group": "go_out",
+      "tags": [
+        "social",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/meet_friend.png",
+      "cg_brief": "친구와 식탁에서 웃으며 대화",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "평범한 수다로 혼자 버티는 감각을 덜어낸다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "오랜만에 친구에게 답장을 했다.",
+        "회사 욕, 음식 이야기, 요즘 잠을 못 잔다는 말이 마음을 조금씩 풀어줬다.",
+        "지갑은 가벼워졌지만 혼자 버티고 있다는 느낌도 조금 가벼워졌다."
+      ],
+      "effects": {
+        "cash_delta": -35000,
+        "health_delta": 0,
+        "mood_delta": [
+          16,
+          24
+        ],
+        "fatigue_delta": [
+          9,
+          15
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "bookstore",
+      "name_ko": "서점 가기",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "calm"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/bookstore.png",
+      "cg_brief": "서점 책장 사이에서 책을 고름",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "아직 고르지 않은 문장들 사이를 걷는다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "서점에 가면 아직 내가 고르지 않은 삶들이 줄지어 있다.",
+        "경제 코너 앞에서 멈췄다가, 에세이 코너로 도망쳤다가, 예상 못한 책을 집었다.",
+        "돈은 썼지만, 미래의 어느 밤에 펼칠 문장을 샀다고 생각하기로 했다."
+      ],
+      "effects": {
+        "cash_delta": -22000,
+        "health_delta": 0,
+        "mood_delta": [
+          9,
+          13
+        ],
+        "fatigue_delta": [
+          4,
+          8
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "shopping",
+      "name_ko": "쇼핑하기",
+      "group": "go_out",
+      "tags": [
+        "expensive",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/shopping.png",
+      "cg_brief": "쇼핑백을 들고 고민하는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "필요한 것과 갖고 싶은 것 사이에서 흔들린다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "필요한 것만 사자. 그 말을 마음속으로 세 번쯤 반복했다.",
+        "필요한 것과 갖고 싶은 것의 경계는 생각보다 흐렸다.",
+        "봉투는 늘었고 잔고는 줄었다. 그래도 생활에 작은 이벤트가 생겼다."
+      ],
+      "effects": {
+        "cash_delta": -65000,
+        "health_delta": 0,
+        "mood_delta": [
+          13,
+          19
+        ],
+        "fatigue_delta": [
+          11,
+          17
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "exhibition",
+      "name_ko": "전시회 가기",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "calm"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/exhibition.png",
+      "cg_brief": "그림 앞에서 조용히 감상",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "조용한 공간에서 다른 속도의 시간을 빌린다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "오늘은 조용한 곳에서 천천히 걷고 싶었다.",
+        "그림 앞에 멈춰 서자 내 마음도 조금 다른 속도로 움직였다.",
+        "좋은 작품을 봤다기보다, 좋은 침묵을 빌린 느낌이었다."
+      ],
+      "effects": {
+        "cash_delta": -20000,
+        "health_delta": 0,
+        "mood_delta": [
+          12,
+          18
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "river_walk",
+      "name_ko": "한강 산책",
+      "group": "go_out",
+      "tags": [
+        "recovery",
+        "light_outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/river_walk.png",
+      "cg_brief": "강변을 걷는 장면",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "물가를 걸으며 생각을 흘려보낸다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "물가를 걸으면 생각도 조금은 흘러갈까.",
+        "강물은 아무 일 없다는 듯 움직이고 있었다.",
+        "눅눅하던 걱정들이 덜 달라붙었다."
+      ],
+      "effects": {
+        "cash_delta": -5000,
+        "health_delta": [
+          4,
+          6
+        ],
+        "mood_delta": [
+          11,
+          17
+        ],
+        "fatigue_delta": [
+          6,
+          10
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "food_trip",
+      "name_ko": "맛집 탐방",
+      "group": "go_out",
+      "tags": [
+        "food",
+        "expensive"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/food_trip.png",
+      "cg_brief": "음식 앞에서 행복한 표정",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "맛있는 음식으로 현재의 나를 챙긴다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "오늘은 맛있는 걸 먹자. 현재의 나를 너무 굶기면 오래 못 버틴다.",
+        "첫입을 먹는 순간 기다린 시간과 가격표가 잠깐 용서됐다.",
+        "행복은 가끔 영수증과 함께 온다."
+      ],
+      "effects": {
+        "cash_delta": -42000,
+        "health_delta": [
+          -2,
+          -1
+        ],
+        "mood_delta": [
+          16,
+          24
+        ],
+        "fatigue_delta": [
+          8,
+          12
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "hair_salon",
+      "name_ko": "미용실 가기",
+      "group": "go_out",
+      "tags": [
+        "selfcare",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/hair_salon.png",
+      "cg_brief": "미용실 거울 앞 산뜻한 모습",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "외형을 산뜻하게 바꿔 내일의 용기를 얻는다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "거울 속 머리가 너무 오래 방치됐다는 표정을 하고 있었다.",
+        "잘려나가는 머리카락을 보며 묵은 기분도 같이 잘려나가면 좋겠다고 생각했다.",
+        "내일 밖에 나갈 용기가 아주 조금 늘었다."
+      ],
+      "effects": {
+        "cash_delta": -55000,
+        "health_delta": 0,
+        "mood_delta": [
+          14,
+          20
+        ],
+        "fatigue_delta": [
+          4,
+          8
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "hospital",
+      "name_ko": "병원/약국 가기",
+      "group": "go_out",
+      "tags": [
+        "health"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/hospital.png",
+      "cg_brief": "약봉투를 들고 병원/약국 앞",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "돈은 들지만 몸을 챙긴다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "괜찮겠지, 하고 넘긴 증상이 며칠째 남아 있었다.",
+        "몸도 매일 관리가 필요한 자산이라는 생각이 들었다.",
+        "건강도 시드머니처럼 잃고 나서야 소중해진다."
+      ],
+      "effects": {
+        "cash_delta": -30000,
+        "health_delta": [
+          13,
+          19
+        ],
+        "mood_delta": [
+          -3,
+          -1
+        ],
+        "fatigue_delta": [
+          -8,
+          -4
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "grocery_shopping",
+      "name_ko": "마트 장보기",
+      "group": "go_out",
+      "tags": [
+        "routine",
+        "food"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/grocery_shopping.png",
+      "cg_brief": "장바구니를 들고 마트에서 고름",
+      "source": "data/game/day_events.json:day_actions",
+      "summary_ko": "며칠치 생활을 미리 채워둔다.",
+      "mode": "choice_closed",
+      "category_id": "go_out",
+      "category_ko": "외출하기",
+      "dialogue": [
+        "냉장고가 비어 있으면 마음도 괜히 비어 보인다.",
+        "같은 토마토라도 가격이 다르고, 같은 생활이라도 선택에 따라 비용이 달라진다.",
+        "냉장고가 채워지자 며칠은 덜 흔들릴 것 같았다."
+      ],
+      "effects": {
+        "cash_delta": -38000,
+        "health_delta": [
+          3,
+          5
+        ],
+        "mood_delta": [
+          4,
+          6
+        ],
+        "fatigue_delta": [
+          9,
+          15
+        ]
+      },
+      "catalog_mode": "day_action"
+    },
+    {
+      "id": "library_visit",
+      "name_ko": "도서관 가기",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "study"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/library_visit.png",
+      "cg_brief": "조용한 도서관 책상에서 공부",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "도서관 가기",
+      "dialogue": [
+        "도서관 문을 열자 세상이 갑자기 작은 소리로만 움직였다.",
+        "여기서는 아무도 내가 돈을 얼마나 모았는지 묻지 않는다.",
+        "책장 사이를 걷다 보니 아직 모르는 것이 많다는 사실이 이상하게 위로가 됐다.",
+        "오늘은 돈 대신 집중력을 조금 빌려왔다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          3,
+          7
+        ],
+        "fatigue_delta": [
+          6,
+          12
+        ]
+      },
+      "image_prompt": "기본 외출복을 입은 주인공이 조용한 도서관 책상에서 노트북과 책을 펼쳐 공부하는 치비풍 2D 이벤트 CG, 따뜻한 실내 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "public_garden",
+      "name_ko": "공원 나들이",
+      "group": "go_out",
+      "tags": [
+        "recovery",
+        "light_outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/public_garden.png",
+      "cg_brief": "공원 벤치와 초록 풍경",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "공원 나들이",
+      "dialogue": [
+        "가까운 공원까지 걸어갔다.",
+        "벤치에 앉아 사람들을 보니 모두 각자의 속도로 주말을 쓰고 있었다.",
+        "비싼 여행은 아니어도, 집 밖의 초록색은 생각보다 효과가 좋았다.",
+        "돌아오는 길엔 발걸음이 아주 조금 가벼워졌다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -3000,
+        "health_delta": [
+          2,
+          5
+        ],
+        "mood_delta": [
+          6,
+          11
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 초록 공원 벤치에서 음료를 들고 쉬는 치비풍 2D 이벤트 CG, 산책로와 나무, 밝은 낮 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_market",
+      "name_ko": "야시장 구경",
+      "group": "go_out",
+      "tags": [
+        "food",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/night_market.png",
+      "cg_brief": "야시장 조명과 길거리 음식",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "야시장 구경",
+      "dialogue": [
+        "해가 지자 거리에 작은 불빛들이 하나씩 켜졌다.",
+        "지글거리는 소리와 달콤한 냄새가 계산력을 흐리게 했다.",
+        "이건 낭비가 아니라 경험이라고 마음속 영수증에 적었다.",
+        "배는 든든했고 지갑은 조금 얇아졌다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -28000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          12,
+          20
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 야시장 조명 아래 길거리 음식을 들고 설레는 치비풍 2D 이벤트 CG, 포장마차 불빛과 사람들, 스마트폰 세로 구도"
+    },
+    {
+      "id": "museum_free_day",
+      "name_ko": "무료 박물관",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "money"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/museum_free_day.png",
+      "cg_brief": "박물관 전시물을 구경하는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "무료 박물관",
+      "dialogue": [
+        "무료 관람일이라는 말에 박물관으로 향했다.",
+        "오래된 물건들은 주가처럼 급하게 오르내리지 않고 조용히 자리를 지키고 있었다.",
+        "돈을 쓰지 않고도 다른 시대를 조금 산책할 수 있다는 게 마음에 들었다.",
+        "지갑은 그대로였고 머릿속은 조금 넓어졌다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          6,
+          12
+        ],
+        "fatigue_delta": [
+          5,
+          10
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 박물관 전시물 앞에서 조용히 감상하는 치비풍 2D 이벤트 CG, 넓은 전시장과 부드러운 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "stationery_shop",
+      "name_ko": "문구점 구경",
+      "group": "go_out",
+      "tags": [
+        "hobby",
+        "light_outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/stationery_shop.png",
+      "cg_brief": "귀여운 문구류 앞에서 고르는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "문구점 구경",
+      "dialogue": [
+        "문구점 앞을 그냥 지나치지 못했다.",
+        "작은 스티커와 펜들이 이상하게 성실한 미래를 약속하는 것처럼 보였다.",
+        "꼭 필요한 건 아니었지만, 새 노트 한 권은 새 마음을 흉내 내게 해준다.",
+        "가방 안에 작은 기분전환이 생겼다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": 0,
+        "mood_delta": [
+          7,
+          13
+        ],
+        "fatigue_delta": [
+          3,
+          7
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 귀여운 문구류와 스티커 앞에서 고민하는 치비풍 2D 이벤트 CG, 알록달록하지만 단정한 문구점, 스마트폰 세로 구도"
+    },
+    {
+      "id": "dessert_cafe",
+      "name_ko": "디저트 카페",
+      "group": "go_out",
+      "tags": [
+        "food",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/dessert_cafe.png",
+      "cg_brief": "케이크와 커피 앞의 행복한 표정",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "디저트 카페",
+      "dialogue": [
+        "쇼케이스 안의 케이크들이 너무 반듯하게 유혹하고 있었다.",
+        "가격표를 보고 잠깐 멈췄지만, 오늘의 나는 단맛이 필요했다.",
+        "첫입을 먹는 순간 복잡한 계산이 잠깐 조용해졌다.",
+        "달콤한 건 오래가지 않지만, 그래서 가끔 더 강하다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -18000,
+        "health_delta": [
+          -1,
+          0
+        ],
+        "mood_delta": [
+          10,
+          16
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 예쁜 케이크와 커피 앞에서 행복해하는 치비풍 2D 이벤트 CG, 사랑스러운 카페 테이블, 스마트폰 세로 구도"
+    },
+    {
+      "id": "yoga_class",
+      "name_ko": "원데이 요가",
+      "group": "go_out",
+      "tags": [
+        "health",
+        "selfcare"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/yoga_class.png",
+      "cg_brief": "요가 수업에서 자세를 따라 함",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "원데이 요가",
+      "dialogue": [
+        "원데이 요가 수업에 등록했다.",
+        "선생님은 편안하게 웃었고, 내 몸은 전혀 편안하지 않은 각도로 접혔다.",
+        "그래도 숨을 맞추다 보니 굳어 있던 마음도 조금 풀렸다.",
+        "운동은 늘 시작 전이 제일 어렵고, 끝난 뒤가 제일 뿌듯하다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -25000,
+        "health_delta": [
+          6,
+          11
+        ],
+        "mood_delta": [
+          5,
+          10
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "외출복에서 운동복으로 갈아입은 주인공이 요가 수업에서 자세를 따라 하는 치비풍 2D 이벤트 CG, 요가 스튜디오와 매트, 스마트폰 세로 구도"
+    },
+    {
+      "id": "gym_day_pass",
+      "name_ko": "헬스장 일일권",
+      "group": "go_out",
+      "tags": [
+        "health",
+        "high_fatigue"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/gym_day_pass.png",
+      "cg_brief": "헬스장 기구 앞에서 결심한 표정",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "헬스장 일일권",
+      "dialogue": [
+        "헬스장 일일권을 끊었다. 결제하는 손이 가장 건강했다.",
+        "러닝머신 위에서 숫자가 올라가는 걸 보니 차트보다 정직하다는 생각이 들었다.",
+        "땀은 났고 숨은 찼고, 내 체력이 예상보다 현실적이라는 사실도 알게 됐다.",
+        "몸은 지쳤지만 건강에 조금 입금한 하루였다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -15000,
+        "health_delta": [
+          8,
+          14
+        ],
+        "mood_delta": [
+          3,
+          8
+        ],
+        "fatigue_delta": [
+          18,
+          28
+        ]
+      },
+      "image_prompt": "운동복 차림의 주인공이 헬스장 기구 앞에서 결심한 표정을 짓는 치비풍 2D 이벤트 CG, 러닝머신과 덤벨, 스마트폰 세로 구도"
+    },
+    {
+      "id": "swimming_pool",
+      "name_ko": "수영장 가기",
+      "group": "go_out",
+      "tags": [
+        "health",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/swimming_pool.png",
+      "cg_brief": "실내 수영장, 수영모와 물가",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "수영장 가기",
+      "dialogue": [
+        "물에 들어가자 몸의 무게가 조금 줄어드는 것 같았다.",
+        "팔을 저을 때마다 평일의 피로가 물결 뒤로 밀렸다.",
+        "오래 버티진 못했지만 숨을 고르는 법은 조금 배웠다.",
+        "집으로 돌아오는 길엔 몸이 피곤한데도 마음은 개운했다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -22000,
+        "health_delta": [
+          7,
+          12
+        ],
+        "mood_delta": [
+          6,
+          12
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "주인공이 실내 수영장에서 수영모와 수건을 들고 물가에 서 있는 치비풍 2D 이벤트 CG, 맑은 물빛과 실내 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "thrift_store",
+      "name_ko": "빈티지샵",
+      "group": "go_out",
+      "tags": [
+        "money",
+        "shopping"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/thrift_store.png",
+      "cg_brief": "빈티지 옷걸이 사이에서 고름",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "빈티지샵",
+      "dialogue": [
+        "새 옷은 부담스럽고, 안 사자니 기분이 아쉬워 빈티지샵에 들어갔다.",
+        "누군가의 시간이 묻은 옷들 사이에서 내 취향을 뒤적였다.",
+        "가격표가 아주 착한 건 아니었지만 새 옷보다는 덜 무서웠다.",
+        "가방 안에 오늘의 작은 변신이 접혀 들어갔다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -26000,
+        "health_delta": 0,
+        "mood_delta": [
+          8,
+          14
+        ],
+        "fatigue_delta": [
+          6,
+          12
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 빈티지샵 옷걸이 사이에서 옷을 고르는 치비풍 2D 이벤트 CG, 따뜻한 조명과 독특한 옷들, 스마트폰 세로 구도"
+    },
+    {
+      "id": "flea_market_selling",
+      "name_ko": "플리마켓 판매",
+      "group": "go_out",
+      "tags": [
+        "income",
+        "social"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/flea_market_selling.png",
+      "cg_brief": "작은 좌판에서 물건을 파는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "플리마켓 판매",
+      "dialogue": [
+        "안 쓰는 물건들을 들고 플리마켓에 나갔다.",
+        "지나가는 사람들이 물건을 만져보고 가격을 묻는 일이 생각보다 긴장됐다.",
+        "하나가 팔릴 때마다 방 한구석의 과거가 현금으로 바뀌었다.",
+        "몸은 지쳤지만 오늘은 생활비에 조금 보탬이 됐다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": 50000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          4,
+          10
+        ],
+        "fatigue_delta": [
+          18,
+          28
+        ]
+      },
+      "image_prompt": "주인공이 작은 플리마켓 좌판에서 중고 물건을 판매하는 치비풍 2D 이벤트 CG, 돗자리와 가격표, 사람들, 스마트폰 세로 구도"
+    },
+    {
+      "id": "bank_errand",
+      "name_ko": "은행 업무",
+      "group": "go_out",
+      "tags": [
+        "money",
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/bank_errand.png",
+      "cg_brief": "은행 창구/ATM 앞에서 서류 확인",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "은행 업무",
+      "dialogue": [
+        "미뤄둔 은행 업무를 처리하러 나왔다.",
+        "번호표를 뽑고 기다리는 시간은 이상하게 인생을 차분히 생각하게 만든다.",
+        "통장과 카드와 자동이체를 확인하니 내 돈의 동선이 조금 선명해졌다.",
+        "즐거운 외출은 아니었지만 필요한 외출이었다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -2,
+          3
+        ],
+        "fatigue_delta": [
+          6,
+          12
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 은행 ATM 또는 창구 앞에서 서류를 확인하는 치비풍 2D 이벤트 CG, 차분한 은행 실내, 스마트폰 세로 구도"
+    },
+    {
+      "id": "phone_repair",
+      "name_ko": "휴대폰 수리",
+      "group": "go_out",
+      "tags": [
+        "accident",
+        "expense"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/phone_repair.png",
+      "cg_brief": "깨진 휴대폰을 들고 수리점 방문",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "휴대폰 수리",
+      "dialogue": [
+        "휴대폰 화면의 금이 햇빛을 받아 더 선명하게 보였다.",
+        "수리 견적을 듣는 순간 마음에도 비슷한 금이 갔다.",
+        "안 고칠 수도 없고, 고치자니 이번 달 예산이 아팠다.",
+        "뜻밖의 지출은 늘 예고 없이 찾아와 생활을 흔든다."
+      ],
+      "category_id": "go_out",
+      "rarity": "rare",
+      "cooldown_days": 180,
+      "effects": {
+        "cash_delta": -80000,
+        "health_delta": 0,
+        "mood_delta": [
+          -14,
+          -8
+        ],
+        "fatigue_delta": [
+          8,
+          15
+        ]
+      },
+      "image_prompt": "주인공이 깨진 휴대폰을 들고 수리점 앞에서 울상 짓는 치비풍 2D 이벤트 CG, 수리 접수대와 작은 부품들, 스마트폰 세로 구도"
+    },
+    {
+      "id": "bike_ride",
+      "name_ko": "자전거 타기",
+      "group": "go_out",
+      "tags": [
+        "health",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/bike_ride.png",
+      "cg_brief": "자전거를 타고 강변을 달림",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "자전거 타기",
+      "dialogue": [
+        "자전거를 빌려 강변길을 달렸다.",
+        "페달을 밟을 때마다 머릿속 걱정이 뒤로 조금씩 밀렸다.",
+        "오르막에서는 체력이 적나라하게 드러났지만, 내려갈 때의 바람은 꽤 근사했다.",
+        "다리는 뻐근했지만 마음은 생각보다 멀리 다녀왔다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -5000,
+        "health_delta": [
+          6,
+          10
+        ],
+        "mood_delta": [
+          7,
+          12
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "외출복 또는 가벼운 운동복 차림의 주인공이 자전거를 타고 강변길을 달리는 치비풍 2D 이벤트 CG, 밝은 하늘과 바람, 스마트폰 세로 구도"
+    },
+    {
+      "id": "photo_walk",
+      "name_ko": "사진 산책",
+      "group": "go_out",
+      "tags": [
+        "hobby",
+        "light_outing"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/photo_walk.png",
+      "cg_brief": "카메라/휴대폰으로 거리 사진 촬영",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "사진 산책",
+      "dialogue": [
+        "오늘은 목적지 없이 사진을 찍으며 걸었다.",
+        "평소엔 그냥 지나치던 간판과 그림자가 화면 안에서는 조금 다르게 보였다.",
+        "돈이 들지 않는 취미도 시간을 들이면 꽤 그럴듯한 보상을 준다.",
+        "갤러리에 작은 산책 기록이 남았다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          2,
+          5
+        ],
+        "mood_delta": [
+          6,
+          11
+        ],
+        "fatigue_delta": [
+          4,
+          9
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 휴대폰 카메라로 골목 풍경과 하늘을 찍는 치비풍 2D 이벤트 CG, 조용한 거리와 햇살, 스마트폰 세로 구도"
+    },
+    {
+      "id": "temple_walk",
+      "name_ko": "조용한 사찰 산책",
+      "group": "go_out",
+      "tags": [
+        "calm",
+        "recovery"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/temple_walk.png",
+      "cg_brief": "조용한 절 마당을 걷는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "조용한 사찰 산책",
+      "dialogue": [
+        "조용한 곳이 필요해서 사찰 쪽으로 걸었다.",
+        "처마 아래 바람소리가 도심의 소음을 조금씩 밀어냈다.",
+        "크게 믿는 것이 없어도 조용한 공간은 사람을 잠깐 낮춰준다.",
+        "마음이 완전히 비워지진 않았지만 적어도 넘치지는 않았다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": -3000,
+        "health_delta": [
+          2,
+          5
+        ],
+        "mood_delta": [
+          7,
+          13
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 조용한 사찰 마당을 천천히 걷는 치비풍 2D 이벤트 CG, 나무와 처마, 차분한 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "baseball_game",
+      "name_ko": "야구장 관람",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "social"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/baseball_game.png",
+      "cg_brief": "야구장 응원석에서 응원",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "야구장 관람",
+      "dialogue": [
+        "야구장에 들어서자 사람들의 목소리가 파도처럼 밀려왔다.",
+        "내가 응원하는 팀의 성적보다 내 계좌 성적이 더 걱정이긴 했다.",
+        "그래도 같이 소리치는 순간에는 복잡한 생각이 잠깐 사라졌다.",
+        "목은 조금 쉬었지만 기분은 크게 뛰었다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": -45000,
+        "health_delta": [
+          -1,
+          1
+        ],
+        "mood_delta": [
+          14,
+          22
+        ],
+        "fatigue_delta": [
+          12,
+          20
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 야구장 응원석에서 응원봉이나 간식을 들고 즐거워하는 치비풍 2D 이벤트 CG, 경기장 조명과 관중석, 스마트폰 세로 구도"
+    },
+    {
+      "id": "live_music",
+      "name_ko": "작은 공연 보기",
+      "group": "go_out",
+      "tags": [
+        "culture",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/live_music.png",
+      "cg_brief": "소규모 공연장 조명과 음악",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "작은 공연 보기",
+      "dialogue": [
+        "작은 공연장에 들어가자 조명이 낮고 소리가 가까웠다.",
+        "모르는 노래였는데도 어떤 가사는 이상하게 내 얘기 같았다.",
+        "돈을 낸 만큼 현실에서 멀어진 시간이 생겼다.",
+        "집으로 돌아오는 길에도 멜로디가 조금 남아 있었다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": -35000,
+        "health_delta": 0,
+        "mood_delta": [
+          12,
+          20
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 작은 공연장 조명 아래 음악을 듣는 치비풍 2D 이벤트 CG, 소규모 무대와 따뜻한 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "boardgame_cafe",
+      "name_ko": "보드게임 카페",
+      "group": "go_out",
+      "tags": [
+        "social",
+        "hobby"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/boardgame_cafe.png",
+      "cg_brief": "테이블 위 보드게임과 친구들",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "보드게임 카페",
+      "dialogue": [
+        "보드게임 카페에서 친구들과 만났다.",
+        "작은 말 하나를 어디로 움직일지 고민하는 일이 생각보다 진지해졌다.",
+        "돈을 크게 버는 게임은 아니었지만, 오늘은 잃어도 웃을 수 있었다.",
+        "현실의 선택지도 이렇게 가볍게 다시 고를 수 있으면 좋겠다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -22000,
+        "health_delta": 0,
+        "mood_delta": [
+          10,
+          18
+        ],
+        "fatigue_delta": [
+          7,
+          13
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공과 친구들이 보드게임 카페 테이블에서 게임판을 보며 웃는 치비풍 2D 이벤트 CG, 알록달록한 말과 카드, 스마트폰 세로 구도"
+    },
+    {
+      "id": "friend_house",
+      "name_ko": "친구 집 놀러가기",
+      "group": "go_out",
+      "tags": [
+        "social",
+        "low_cost"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/friend_house.png",
+      "cg_brief": "친구 방/거실에서 편하게 쉬기",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "친구 집 놀러가기",
+      "dialogue": [
+        "친구 집에 가는 길은 이상하게 부담이 적었다.",
+        "거창한 약속도 비싼 메뉴도 없이 그냥 바닥에 앉아 이야기를 했다.",
+        "남의 방에서 쉬고 있자니 내 고민도 잠깐 남의 일처럼 보였다.",
+        "돌아오는 길의 지출은 작았고 마음의 환기는 컸다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": 0,
+        "mood_delta": [
+          12,
+          20
+        ],
+        "fatigue_delta": [
+          5,
+          10
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 친구의 아늑한 방이나 거실에서 간식을 놓고 편하게 이야기하는 치비풍 2D 이벤트 CG, 따뜻한 실내 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "family_dinner",
+      "name_ko": "가족 저녁식사",
+      "group": "go_out",
+      "tags": [
+        "social",
+        "family"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/family_dinner.png",
+      "cg_brief": "가족 식탁에서 밥을 먹는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "가족 저녁식사",
+      "dialogue": [
+        "가족과 저녁을 먹으러 나갔다.",
+        "밥상 위에는 반찬보다 질문이 먼저 올라왔다. 회사는 어떠냐, 돈은 모으고 있냐.",
+        "대답하기 어려운 말들도 있었지만 따뜻한 국물은 꽤 정직했다.",
+        "피곤한 자리였지만 혼자 먹는 밥과는 다른 힘이 있었다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": -30000,
+        "health_delta": [
+          2,
+          6
+        ],
+        "mood_delta": [
+          -2,
+          12
+        ],
+        "fatigue_delta": [
+          6,
+          12
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 가족과 식탁에서 저녁을 먹는 치비풍 2D 이벤트 CG, 따뜻하지만 약간 어색한 가족 식사 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "volunteer_shift",
+      "name_ko": "봉사활동",
+      "group": "go_out",
+      "tags": [
+        "social",
+        "health"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/volunteer_shift.png",
+      "cg_brief": "봉사 조끼를 입고 물품 정리",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "봉사활동",
+      "dialogue": [
+        "쉬는 날을 조금 다른 방식으로 써보기로 했다.",
+        "물건을 나르고 이름표를 붙이는 일은 단순했지만 생각보다 손이 많이 갔다.",
+        "내가 대단한 도움을 준 건 아니어도, 누군가의 하루에 작은 틈을 메운 느낌이었다.",
+        "몸은 피곤했지만 기분은 이상하게 단단했다."
+      ],
+      "category_id": "go_out",
+      "rarity": "uncommon",
+      "cooldown_days": 150,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -1,
+          2
+        ],
+        "mood_delta": [
+          8,
+          16
+        ],
+        "fatigue_delta": [
+          14,
+          24
+        ]
+      },
+      "image_prompt": "주인공이 봉사 조끼를 입고 물품 상자나 도시락을 정리하는 치비풍 2D 이벤트 CG, 밝은 봉사센터 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "certificate_exam",
+      "name_ko": "자격증 시험",
+      "group": "go_out",
+      "tags": [
+        "productive",
+        "career"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/certificate_exam.png",
+      "cg_brief": "시험장 책상에서 긴장한 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "자격증 시험",
+      "dialogue": [
+        "시험장 책상에 앉자 평소보다 연필 소리가 크게 들렸다.",
+        "문제지를 넘기는 손끝에 주말을 바친 시간이 조금 묻어 있었다.",
+        "자신 있는 문제도 있었고, 처음 보는 얼굴의 문제도 있었다.",
+        "결과는 나중에 오겠지만 오늘의 나는 도망치지 않았다."
+      ],
+      "category_id": "go_out",
+      "rarity": "rare",
+      "cooldown_days": 180,
+      "effects": {
+        "cash_delta": -45000,
+        "health_delta": 0,
+        "mood_delta": [
+          -8,
+          12
+        ],
+        "fatigue_delta": [
+          20,
+          32
+        ]
+      },
+      "image_prompt": "주인공이 시험장 책상에 앉아 수험표와 연필을 앞에 두고 긴장한 치비풍 2D 이벤트 CG, 조용한 교실 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "pet_cafe",
+      "name_ko": "동물 카페",
+      "group": "go_out",
+      "tags": [
+        "mood",
+        "animal_cafe"
+      ],
+      "cg_path": "res://assets/events/weekend/go_out/pet_cafe.png",
+      "cg_brief": "카페에서 작은 반려동물과 쉬기",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "동물 카페",
+      "dialogue": [
+        "동물 카페에 들어가자 말 대신 작은 발소리들이 먼저 반겼다.",
+        "조심스럽게 손을 내밀었더니 따뜻한 체온이 잠깐 닿았다.",
+        "아무것도 해결된 건 없는데 마음이 쉽게 풀리는 순간이 있다.",
+        "오늘의 지출은 작지 않았지만 표정은 꽤 오래 부드러웠다."
+      ],
+      "category_id": "go_out",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -18000,
+        "health_delta": 0,
+        "mood_delta": [
+          11,
+          18
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "외출복 차림의 주인공이 아늑한 동물 카페에서 작은 반려동물과 조심스럽게 교감하는 치비풍 2D 이벤트 CG, 부드럽고 귀여운 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "overtime_request",
+      "name_ko": "야근 요청",
+      "group": "weekday",
+      "tags": [
+        "퇴근길"
+      ],
+      "cg_path": "res://assets/events/weekday/overtime_request.png",
+      "cg_brief": "퇴근 직전 메신저 알림과 어두운 사무실",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "퇴근길",
+      "conditions_text": "기본 랜덤",
+      "effects": {
+        "cash_delta": 20000,
+        "health_delta": [
+          -4,
+          -2
+        ],
+        "mood_delta": [
+          -10,
+          -6
+        ],
+        "fatigue_delta": [
+          14,
+          22
+        ]
+      },
+      "cg_id": "office_overtime",
+      "status": "초안",
+      "notes": "추가수당형 피로 이벤트",
+      "dialogue": [
+        "퇴근 10분 전, 메신저 알림이 울렸다. 하필 가방 지퍼를 닫으려던 순간이었다.",
+        "팀장: \"혹시 오늘 이것만 보고 갈 수 있어요? 내일 오전에 바로 써야 해서.\"",
+        "나는 모니터 오른쪽 아래의 시계를 봤다. 숫자는 분명 퇴근을 말하고 있는데, 사무실 공기는 아직 아니라고 했다.",
+        "오늘 산 주식은 잘 버티고 있을까. 그런 생각을 하자 괜히 더 억울했다.",
+        "그래도 추가 수당은 들어온다. 돈은 조금 벌었지만, 어깨는 퇴근보다 먼저 집에 가고 싶어 했다."
+      ]
+    },
+    {
+      "id": "sick_day",
+      "name_ko": "몸살 기운",
+      "group": "weekday",
+      "tags": [
+        "출근"
+      ],
+      "cg_path": "res://assets/events/weekday/sick_day.png",
+      "cg_brief": "출근길 지하철에서 힘들어하는 장면",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "출근",
+      "conditions_text": "건강 낮음 또는 피로 높음",
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -10,
+          -6
+        ],
+        "mood_delta": [
+          -13,
+          -8
+        ],
+        "fatigue_delta": [
+          -22,
+          -14
+        ]
+      },
+      "cg_id": "commute_sick",
+      "status": "초안",
+      "notes": "피로는 쉬어서 감소하지만 건강/기분 타격",
+      "dialogue": [
+        "아침부터 몸이 무겁다. 베개가 나를 붙잡는 건지, 내가 베개를 붙잡는 건지 알 수 없었다.",
+        "출근길 지하철 손잡이를 잡고 서 있는데, 광고판의 글자가 살짝 번져 보였다.",
+        "이 정도는 다들 참고 사는 거겠지. 그렇게 생각하다가 문득 억울해졌다.",
+        "회사에 도착해서도 숫자가 잘 들어오지 않았다. 차트도 보고서도, 점심 메뉴판까지 이상하게 멀리 있었다.",
+        "오늘은 무리하지 않는 것도 선택이다. 계좌도 중요하지만, 몸이 0이 되면 아무것도 이어지지 않는다."
+      ]
+    },
+    {
+      "id": "lunch_overspend",
+      "name_ko": "점심 과소비",
+      "group": "weekday",
+      "tags": [
+        "점심"
+      ],
+      "cg_path": "res://assets/events/weekday/lunch_overspend.png",
+      "cg_brief": "비싼 점심 메뉴판 앞의 고민",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "점심",
+      "conditions_text": "기본 랜덤",
+      "effects": {
+        "cash_delta": -22000,
+        "health_delta": 0,
+        "mood_delta": [
+          6,
+          10
+        ],
+        "fatigue_delta": [
+          1,
+          3
+        ]
+      },
+      "cg_id": "lunch_expensive",
+      "status": "초안",
+      "notes": "생활비 압박",
+      "dialogue": [
+        "오늘 점심은 이상하게 다들 기분이 좋아 보였다. 누군가 \"오늘은 맛있는 거 먹죠\"라고 말했고, 아무도 반대하지 않았다.",
+        "메뉴판의 가격표가 슬쩍 마음에 걸렸다. 내 마음속 계산기는 주문보다 빠르게 돌아갔다.",
+        "동료: \"가끔은 이런 것도 먹어야죠. 매일 아끼면 사람이 너무 팍팍해져요.\"",
+        "맞는 말이었다. 문제는 맞는 말이 늘 저렴하지는 않다는 점이었다.",
+        "맛있었다. 정말 맛있었다. 하지만 카드 알림은 계산서보다 더 오래 기억에 남았다."
+      ]
+    },
+    {
+      "id": "payday",
+      "name_ko": "월급날",
+      "group": "weekday",
+      "tags": [
+        "근무중"
+      ],
+      "cg_path": "res://assets/events/weekday/payday.png",
+      "cg_brief": "은행 입금 알림을 보고 밝아지는 표정",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "근무중",
+      "conditions_text": "월급일",
+      "effects": {
+        "cash_delta": 2300000,
+        "health_delta": 0,
+        "mood_delta": [
+          14,
+          22
+        ],
+        "fatigue_delta": 0
+      },
+      "cg_id": "bank_payday",
+      "status": "초안",
+      "notes": "고정 월간 이벤트",
+      "dialogue": [
+        "오전 9시 17분, 은행 앱 알림이 떴다. 월급이었다.",
+        "숫자가 들어오는 순간만큼은 회사가 조금 덜 미워졌다. 아주 잠깐이지만.",
+        "나는 잔고를 보고 숨을 골랐다. 이 돈에서 월세, 카드값, 식비, 통신비가 차례로 손을 들 것이다.",
+        "그래도 오늘만큼은 내 편인 숫자가 하나 생긴 기분이었다.",
+        "10억까지는 멀다. 하지만 모든 큰 숫자는 이런 작은 입금에서 시작한다고 믿어보기로 했다."
+      ]
+    },
+    {
+      "id": "card_payment",
+      "name_ko": "카드값 출금",
+      "group": "weekday",
+      "tags": [
+        "근무중"
+      ],
+      "cg_path": "res://assets/events/weekday/card_payment.png",
+      "cg_brief": "카드대금 알림을 보고 굳은 표정",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "근무중",
+      "conditions_text": "카드 출금일",
+      "effects": {
+        "cash_delta": -680000,
+        "health_delta": 0,
+        "mood_delta": [
+          -20,
+          -12
+        ],
+        "fatigue_delta": [
+          3,
+          5
+        ]
+      },
+      "cg_id": "bank_card_payment",
+      "status": "초안",
+      "notes": "월간 고정 지출",
+      "dialogue": [
+        "점심시간이 끝날 무렵 카드대금 출금 알림이 도착했다.",
+        "알림 하나가 이렇게 무거울 수 있다니. 나는 휴대폰 화면을 한 번 껐다가 다시 켰다.",
+        "지난달의 내가 오늘의 나에게 청구서를 보낸 셈이었다.",
+        "분명 하나하나는 필요한 소비였다고 생각했는데, 합쳐진 숫자는 꽤 공격적이었다.",
+        "앞으로 주식을 사기 전에, 내 소비도 같이 매수 심사를 해야겠다는 생각이 들었다."
+      ]
+    },
+    {
+      "id": "friend_profit_brag",
+      "name_ko": "친구의 투자 자랑",
+      "group": "weekday",
+      "tags": [
+        "퇴근길"
+      ],
+      "cg_path": "res://assets/events/weekday/friend_profit_brag.png",
+      "cg_brief": "휴대폰 수익 인증 메시지를 보는 장면",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "퇴근길",
+      "conditions_text": "기본 랜덤",
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -8,
+          -4
+        ],
+        "fatigue_delta": [
+          4,
+          8
+        ]
+      },
+      "cg_id": "phone_friend_profit",
+      "status": "초안",
+      "notes": "추격매수 욕망 유발",
+      "dialogue": [
+        "퇴근길에 친구에게 메시지가 왔다. 캡처 이미지 하나와 짧은 문장.",
+        "친구: \"나 이거 어제 샀는데 오늘 12% 먹었다. 미쳤지?\"",
+        "축하한다고 답장을 보내면서도 손끝이 조금 느려졌다. 남의 수익은 왜 이렇게 크게 보일까.",
+        "나는 내 계좌를 열었다가 바로 닫았다. 비교는 무료지만, 마음에서는 꽤 비싼 값을 받는다.",
+        "그래도 따라 사지는 않기로 했다. 부러움으로 누른 매수 버튼은 대체로 비싼 수업료가 된다."
+      ]
+    },
+    {
+      "id": "praised_at_work",
+      "name_ko": "회사에서 칭찬받음",
+      "group": "weekday",
+      "tags": [
+        "근무중"
+      ],
+      "cg_path": "res://assets/events/weekday/praised_at_work.png",
+      "cg_brief": "회의실에서 자료를 칭찬받는 장면",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "근무중",
+      "conditions_text": "기본 랜덤",
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          13,
+          19
+        ],
+        "fatigue_delta": [
+          -3,
+          -1
+        ]
+      },
+      "cg_id": "office_praise",
+      "status": "초안",
+      "notes": "회복형 업무 이벤트",
+      "dialogue": [
+        "오전 회의에서 내가 정리한 자료가 화면에 올라갔다.",
+        "팀장: \"이 부분은 보기 좋게 정리했네요. 다음에도 이 방식으로 가죠.\"",
+        "대단한 말은 아니었다. 그런데 하루 종일 구겨져 있던 마음 한쪽이 조용히 펴졌다.",
+        "회사가 인생의 전부는 아니지만, 오늘의 내가 완전히 투명한 사람은 아니라는 확인이 되었다.",
+        "퇴근할 때 발걸음이 조금 가벼웠다. 이런 날은 집에 가서 계좌를 봐도 덜 무서울 것 같았다."
+      ]
+    },
+    {
+      "id": "work_mistake",
+      "name_ko": "업무 실수",
+      "group": "weekday",
+      "tags": [
+        "근무중"
+      ],
+      "cg_path": "res://assets/events/weekday/work_mistake.png",
+      "cg_brief": "잘못 보낸 파일과 당황한 표정",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "근무중",
+      "conditions_text": "피로 높음이면 가중",
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          -22,
+          -14
+        ],
+        "fatigue_delta": [
+          9,
+          15
+        ]
+      },
+      "cg_id": "office_mistake",
+      "status": "초안",
+      "notes": "스트레스 이벤트",
+      "dialogue": [
+        "오후 세 시, 내가 보낸 파일 이름이 잘못됐다는 메시지가 왔다.",
+        "큰 사고는 아니었다. 다시 보내면 되는 일이었다. 그런데 얼굴이 먼저 뜨거워졌다.",
+        "팀장: \"다음부터는 발송 전에 한 번만 더 확인해 주세요.\"",
+        "정중한 말투가 오히려 오래 남았다. 혼나는 것보다 스스로에게 실망하는 쪽이 더 피곤했다.",
+        "집에 가면 오늘은 매매 기록도 다시 확인해야겠다. 실수는 회사에서든 계좌에서든 대충 넘기면 자란다."
+      ]
+    },
+    {
+      "id": "impulse_buy",
+      "name_ko": "퇴근길 충동구매",
+      "group": "weekday",
+      "tags": [
+        "퇴근길"
+      ],
+      "cg_path": "res://assets/events/weekday/impulse_buy.png",
+      "cg_brief": "지하상가 진열대 앞에서 흔들림",
+      "source": "docs/gameplay/weekday_events.md",
+      "weekday_phase": "퇴근길",
+      "conditions_text": "기분 낮음이면 가중",
+      "effects": {
+        "cash_delta": -48000,
+        "health_delta": 0,
+        "mood_delta": [
+          7,
+          11
+        ],
+        "fatigue_delta": [
+          4,
+          6
+        ]
+      },
+      "cg_id": "commute_impulse_buy",
+      "status": "초안",
+      "notes": "감정 소비",
+      "dialogue": [
+        "퇴근길 지하상가 조명이 유난히 밝았다. 그냥 지나가려고 했는데, 진열대의 색이 너무 성실하게 나를 불렀다.",
+        "이 정도는 괜찮지 않을까. 마음속에서 가장 위험한 문장이 고개를 들었다.",
+        "결제는 짧았고, 변명은 길었다. 어차피 필요한 거였고, 세일이었고, 오늘은 힘들었고.",
+        "집에 도착해서 봉투를 내려놓으니 기분은 조금 좋아졌지만 잔고는 조금 조용해졌다.",
+        "소비도 감정의 언어라면, 오늘 나는 피곤하다는 말을 돈으로 한 셈이다."
+      ]
+    },
+    {
+      "id": "commute_delay",
+      "name_ko": "지하철 지연",
+      "group": "weekday",
+      "tags": [
+        "commute",
+        "stress"
+      ],
+      "cg_path": "res://assets/events/weekday/commute_delay.png",
+      "cg_brief": "지연 안내판과 답답한 출근길",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "지하철 지연",
+      "dialogue": [
+        "지하철 전광판에 지연 안내가 떴다.",
+        "사람들은 다 같이 멈춰 있었지만, 내 마음만 먼저 회사로 뛰어가고 있었다.",
+        "늦는다고 세상이 끝나는 건 아닌데 출근길의 몇 분은 이상하게 크게 느껴진다.",
+        "회사에 도착하기 전부터 피로가 한 칸 쌓였다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 45,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          -10,
+          -5
+        ],
+        "fatigue_delta": [
+          8,
+          14
+        ]
+      },
+      "image_prompt": "사무직 출근복을 입은 주인공이 지하철역 지연 안내판 앞에서 초조해하는 치비풍 2D 이벤트 CG, 출근길 인파와 전광판, 스마트폰 세로 구도"
+    },
+    {
+      "id": "boss_mood_bad",
+      "name_ko": "부장님 기분 나쁨",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "stress"
+      ],
+      "cg_path": "res://assets/events/weekday/boss_mood_bad.png",
+      "cg_brief": "사무실 공기가 얼어붙은 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "부장님 기분 나쁨",
+      "dialogue": [
+        "출근하자마자 사무실 공기가 평소보다 차가웠다.",
+        "AA부장의 키보드 소리가 유난히 크게 들렸다.",
+        "아무도 크게 혼나지 않았는데 모두가 조금씩 조심스럽게 움직였다.",
+        "이런 날은 일보다 분위기를 견디는 데 체력이 더 든다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          -15,
+          -8
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "사무실에서 주인공이 긴장한 표정으로 모니터를 보며 부장님의 싸늘한 분위기를 느끼는 치비풍 2D 이벤트 CG, 회색빛 사무실, 스마트폰 세로 구도"
+    },
+    {
+      "id": "team_lunch",
+      "name_ko": "팀 점심 회식",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "food",
+        "social"
+      ],
+      "cg_path": "res://assets/events/weekday/team_lunch.png",
+      "cg_brief": "팀원들과 식당 테이블에 앉은 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "팀 점심 회식",
+      "dialogue": [
+        "점심시간에 팀 전체가 같이 나가자는 이야기가 나왔다.",
+        "혼자 먹고 싶던 마음은 조용히 가방 안으로 들어갔다.",
+        "밥은 맛있었지만 대화의 온도를 맞추는 일은 생각보다 어려웠다.",
+        "점심값보다 사회생활 비용이 조금 더 크게 느껴졌다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": 0,
+        "mood_delta": [
+          -2,
+          8
+        ],
+        "fatigue_delta": [
+          4,
+          10
+        ]
+      },
+      "image_prompt": "사무직 복장의 주인공이 팀원들과 점심 식당 테이블에 앉아 애매하게 웃는 치비풍 2D 이벤트 CG, 식당 메뉴와 직장인 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "coffee_spill",
+      "name_ko": "커피 쏟음",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "accident"
+      ],
+      "cg_path": "res://assets/events/weekday/coffee_spill.png",
+      "cg_brief": "책상 위 커피가 쏟아진 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "커피 쏟음",
+      "dialogue": [
+        "커피 컵이 손끝에서 미끄러졌다.",
+        "갈색 액체가 책상 위로 번지는 순간 오늘의 평온도 같이 번졌다.",
+        "다행히 큰 사고는 아니었지만 닦아내는 내내 마음이 축축했다.",
+        "카페인보다 강한 각성 효과가 있었다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -5000,
+        "health_delta": 0,
+        "mood_delta": [
+          -12,
+          -6
+        ],
+        "fatigue_delta": [
+          6,
+          12
+        ]
+      },
+      "image_prompt": "사무실 책상 위 커피가 쏟아지고 주인공이 당황해 휴지를 찾는 치비풍 2D 이벤트 CG, 키보드와 서류, 스마트폰 세로 구도"
+    },
+    {
+      "id": "client_praise",
+      "name_ko": "거래처 칭찬",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/weekday/client_praise.png",
+      "cg_brief": "전화/메일로 좋은 피드백을 받음",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "거래처 칭찬",
+      "dialogue": [
+        "거래처에서 답장이 왔다.",
+        "고생한 티가 난다는 짧은 문장이 화면에 떠 있었다.",
+        "월급이 바로 오르는 건 아니지만, 내가 투명한 부품만은 아니라는 느낌이 들었다.",
+        "오후의 피로가 아주 조금 뒤로 물러났다."
+      ],
+      "category_id": "weekday",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          12,
+          20
+        ],
+        "fatigue_delta": [
+          -4,
+          1
+        ]
+      },
+      "image_prompt": "사무실 자리에서 주인공이 좋은 피드백 메일을 보고 살짝 웃는 치비풍 2D 이벤트 CG, 노트북 화면과 밝아진 표정, 스마트폰 세로 구도"
+    },
+    {
+      "id": "printer_jam",
+      "name_ko": "프린터 용지 걸림",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "routine"
+      ],
+      "cg_path": "res://assets/events/weekday/printer_jam.png",
+      "cg_brief": "프린터 앞에서 종이를 빼는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "프린터 용지 걸림",
+      "dialogue": [
+        "급하게 뽑아야 하는 자료가 프린터 안에서 멈췄다.",
+        "화면에는 친절한 오류 문구가 떴지만 전혀 친절하게 느껴지지 않았다.",
+        "종이를 조심스럽게 빼내는 동안 회의 시간이 가까워졌다.",
+        "사소한 기계 문제도 바쁜 날에는 제법 큰 적이 된다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -6,
+          -2
+        ],
+        "fatigue_delta": [
+          5,
+          10
+        ]
+      },
+      "image_prompt": "주인공이 사무실 프린터 앞에서 걸린 종이를 조심스럽게 빼내는 치비풍 2D 이벤트 CG, 복합기와 서류 더미, 스마트폰 세로 구도"
+    },
+    {
+      "id": "sudden_meeting",
+      "name_ko": "갑작스런 회의",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "stress"
+      ],
+      "cg_path": "res://assets/events/weekday/sudden_meeting.png",
+      "cg_brief": "캘린더 알림과 회의실 이동",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "갑작스런 회의",
+      "dialogue": [
+        "캘린더 알림이 갑자기 튀어나왔다.",
+        "분명 오전에는 없던 회의가 점심 이후의 시간을 통째로 차지하고 있었다.",
+        "준비되지 않은 채 회의실로 들어가는 일은 늘 작은 시험 같다.",
+        "오늘의 업무는 앞으로 간 게 아니라 옆으로 밀린 느낌이었다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -9,
+          -4
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "주인공이 캘린더 알림을 보고 급히 노트북을 들고 회의실로 향하는 치비풍 2D 이벤트 CG, 사무실 복도와 회의실 문, 스마트폰 세로 구도"
+    },
+    {
+      "id": "career_thought",
+      "name_ko": "이직 생각",
+      "group": "weekday",
+      "tags": [
+        "commute",
+        "career"
+      ],
+      "cg_path": "res://assets/events/weekday/career_thought.png",
+      "cg_brief": "버스 창밖을 보며 커리어 고민",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "이직 생각",
+      "dialogue": [
+        "퇴근길 창밖으로 회사 건물들이 하나씩 지나갔다.",
+        "나는 이 일을 언제까지 하게 될까.",
+        "답은 없었지만 질문이 생겼다는 것만으로도 마음이 조금 불편해졌다.",
+        "노동탈출이 주식 계좌만의 문제는 아닐지도 모른다."
+      ],
+      "category_id": "weekday",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -4,
+          6
+        ],
+        "fatigue_delta": [
+          4,
+          10
+        ]
+      },
+      "image_prompt": "퇴근길 버스 창가에 앉은 주인공이 도시 불빛을 보며 커리어를 고민하는 치비풍 2D 이벤트 CG, 저녁 버스 내부, 스마트폰 세로 구도"
+    },
+    {
+      "id": "stock_news_alert",
+      "name_ko": "주식 뉴스 알림",
+      "group": "weekday",
+      "tags": [
+        "stock",
+        "office"
+      ],
+      "cg_path": "res://assets/events/weekday/stock_news_alert.png",
+      "cg_brief": "회사 책상에서 몰래 뉴스 알림 확인",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "주식 뉴스 알림",
+      "dialogue": [
+        "업무 중 휴대폰에 주식 뉴스 알림이 떴다.",
+        "확인하지 말아야지 생각하는 순간 이미 손은 화면을 켜고 있었다.",
+        "제목 하나에 마음이 위아래로 흔들렸다.",
+        "회사 일과 내 돈이 동시에 나를 부르는 날이었다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 45,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": 0,
+        "mood_delta": [
+          -6,
+          10
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "사무실 책상에서 주인공이 휴대폰 주식 뉴스 알림을 몰래 확인하는 치비풍 2D 이벤트 CG, 모니터와 서류 사이의 긴장감, 스마트폰 세로 구도"
+    },
+    {
+      "id": "coworker_wedding_invite",
+      "name_ko": "동료 청첩장",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "expense",
+        "social"
+      ],
+      "cg_path": "res://assets/events/weekday/coworker_wedding_invite.png",
+      "cg_brief": "청첩장을 받고 축의금 고민",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "동료 청첩장",
+      "dialogue": [
+        "동료가 조심스럽게 청첩장을 건넸다.",
+        "축하한다는 말은 진심이었고, 축의금 계산도 동시에 진심이었다.",
+        "어른의 사회생활은 기쁜 일에도 예산표가 따라붙는다.",
+        "좋은 날을 축하하면서도 이번 달 지출 칸이 조금 무거워졌다."
+      ],
+      "category_id": "weekday",
+      "rarity": "uncommon",
+      "cooldown_days": 180,
+      "effects": {
+        "cash_delta": -50000,
+        "health_delta": 0,
+        "mood_delta": [
+          -6,
+          3
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "사무실에서 주인공이 동료에게 청첩장을 받고 축하와 지출 사이에서 난감해하는 치비풍 2D 이벤트 CG, 예쁜 봉투와 책상, 스마트폰 세로 구도"
+    },
+    {
+      "id": "health_check_notice",
+      "name_ko": "건강검진 안내",
+      "group": "weekday",
+      "tags": [
+        "health",
+        "office"
+      ],
+      "cg_path": "res://assets/events/weekday/health_check_notice.png",
+      "cg_brief": "건강검진 안내 메일을 보는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "건강검진 안내",
+      "dialogue": [
+        "건강검진 안내 메일이 도착했다.",
+        "평소엔 잊고 지내던 몸이 갑자기 공식 일정으로 등록됐다.",
+        "숫자로 확인되는 건 계좌만이 아니라는 생각이 들었다.",
+        "검사 날짜를 캘린더에 넣으며 몸도 관리 대상이라는 걸 다시 떠올렸다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          2,
+          5
+        ],
+        "mood_delta": [
+          -3,
+          2
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "주인공이 회사 메일함에서 건강검진 안내 메일을 읽는 치비풍 2D 이벤트 CG, 사무실 책상과 메일 화면, 살짝 긴장한 표정, 스마트폰 세로 구도"
+    },
+    {
+      "id": "work_from_home_day",
+      "name_ko": "재택근무일",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "home"
+      ],
+      "cg_path": "res://assets/events/weekday/work_from_home_day.png",
+      "cg_brief": "집 책상에서 업무 노트북을 켬",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "재택근무일",
+      "dialogue": [
+        "오늘은 재택근무일이다.",
+        "출근길을 건너뛴 것만으로도 하루가 조금 선물처럼 시작됐다.",
+        "물론 메신저 알림은 집까지 정확히 따라왔다.",
+        "그래도 점심시간에 내 컵으로 커피를 마실 수 있다는 건 꽤 큰 차이다."
+      ],
+      "category_id": "weekday",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          1,
+          4
+        ],
+        "mood_delta": [
+          5,
+          10
+        ],
+        "fatigue_delta": [
+          -10,
+          -3
+        ]
+      },
+      "image_prompt": "홈웨어에 가벼운 가디건을 걸친 주인공이 집 책상에서 업무 노트북을 켜는 치비풍 2D 이벤트 CG, 아늑한 방과 업무 화면, 스마트폰 세로 구도"
+    },
+    {
+      "id": "company_dinner",
+      "name_ko": "회사 회식",
+      "group": "weekday",
+      "tags": [
+        "office",
+        "social",
+        "food"
+      ],
+      "cg_path": "res://assets/events/weekday/company_dinner.png",
+      "cg_brief": "회식 자리에서 애매하게 웃는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "회사 회식",
+      "dialogue": [
+        "퇴근하려던 순간 회식 이야기가 자연스럽게 확정됐다.",
+        "고기는 맛있었지만 집에 가고 싶은 마음도 같이 구워졌다.",
+        "웃어야 할 타이밍을 맞추는 일은 생각보다 많은 에너지를 쓴다.",
+        "배는 불렀고 하루는 길어졌다."
+      ],
+      "category_id": "weekday",
+      "rarity": "uncommon",
+      "cooldown_days": 120,
+      "effects": {
+        "cash_delta": -20000,
+        "health_delta": [
+          -3,
+          0
+        ],
+        "mood_delta": [
+          -8,
+          8
+        ],
+        "fatigue_delta": [
+          18,
+          28
+        ]
+      },
+      "image_prompt": "퇴근 후 회식 자리에서 주인공이 애매하게 웃으며 앉아 있는 치비풍 2D 이벤트 CG, 식당 테이블과 직장 동료들, 스마트폰 세로 구도"
+    },
+    {
+      "id": "missed_alarm",
+      "name_ko": "알람 못 들음",
+      "group": "weekday",
+      "tags": [
+        "commute",
+        "stress"
+      ],
+      "cg_path": "res://assets/events/weekday/missed_alarm.png",
+      "cg_brief": "침대에서 벌떡 일어나 시계를 봄",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "알람 못 들음",
+      "dialogue": [
+        "눈을 떴을 때 방이 너무 밝았다.",
+        "휴대폰 화면의 시간은 이미 정상 출근 루트를 배신하고 있었다.",
+        "머리는 덜 깼는데 몸은 급하게 움직였다.",
+        "택시비는 아팠고 하루의 시작은 이미 숨이 찼다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          -14,
+          -8
+        ],
+        "fatigue_delta": [
+          8,
+          16
+        ]
+      },
+      "image_prompt": "주인공이 침대에서 벌떡 일어나 휴대폰 시계를 보고 크게 당황하는 치비풍 2D 이벤트 CG, 어질러진 이불과 아침 햇살, 스마트폰 세로 구도"
+    },
+    {
+      "id": "umbrella_lost",
+      "name_ko": "우산 잃어버림",
+      "group": "weekday",
+      "tags": [
+        "commute",
+        "rainy",
+        "expense"
+      ],
+      "cg_path": "res://assets/events/weekday/umbrella_lost.png",
+      "cg_brief": "비 오는 퇴근길, 빈 우산꽂이",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "우산 잃어버림",
+      "dialogue": [
+        "퇴근하려고 우산꽂이를 봤는데 내 우산이 없었다.",
+        "비는 아주 성실하게 내리고 있었다.",
+        "편의점에서 새 우산을 사는 동안 괜히 억울했다.",
+        "작은 지출인데도 비 맞은 양말처럼 오래 찝찝했다."
+      ],
+      "category_id": "weekday",
+      "rarity": "common",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -9000,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          -10,
+          -4
+        ],
+        "fatigue_delta": [
+          5,
+          10
+        ]
+      },
+      "image_prompt": "비 오는 퇴근길에 주인공이 빈 우산꽂이를 보며 당황하는 치비풍 2D 이벤트 CG, 사무실 입구와 빗방울, 스마트폰 세로 구도"
+    },
+    {
+      "id": "tax_refund_notice",
+      "name_ko": "환급 알림",
+      "group": "weekday",
+      "tags": [
+        "money",
+        "lucky"
+      ],
+      "cg_path": "res://assets/events/weekday/tax_refund_notice.png",
+      "cg_brief": "예상 못한 환급 문자에 기뻐함",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "환급 알림",
+      "dialogue": [
+        "휴대폰에 예상 못한 환급 알림이 떴다.",
+        "큰돈은 아니었지만 계획에 없던 돈은 늘 조금 반갑다.",
+        "세상이 나에게 작은 사과를 건넨 것 같은 기분이었다.",
+        "오늘은 커피 한 잔쯤 사도 마음이 덜 무서울 것 같다."
+      ],
+      "category_id": "weekday",
+      "rarity": "rare",
+      "cooldown_days": 365,
+      "effects": {
+        "cash_delta": 85000,
+        "health_delta": 0,
+        "mood_delta": [
+          12,
+          20
+        ],
+        "fatigue_delta": [
+          -4,
+          0
+        ]
+      },
+      "image_prompt": "사무실 책상에서 주인공이 예상 못한 환급 문자 알림을 보고 환하게 웃는 치비풍 2D 이벤트 CG, 휴대폰 화면과 밝은 표정, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_chimaek",
+      "name_ko": "치맥이 땡긴다",
+      "group": "night",
+      "tags": [
+        "food",
+        "chicken"
+      ],
+      "cg_path": "res://assets/events/night/snacks/chimaek.png",
+      "cg_brief": "치킨과 맥주 앞에서 행복해함",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "일하고 돌아오니 치킨과 맥주가 머릿속에서 떠나질 않는다.",
+      "chance": 0.045,
+      "dialogue": [
+        "일하고 돌아오니 치킨과 맥주가 머릿속에서 떠나질 않는다.",
+        "오늘 하루를 견딘 나에게 이 정도 보상은 줘도 되지 않을까.",
+        "카드 알림은 조금 아팠지만, 첫입은 꽤 다정했다."
+      ],
+      "effects": {
+        "cash_delta": -35000,
+        "health_delta": [
+          -6,
+          -2
+        ],
+        "mood_delta": [
+          14,
+          22
+        ],
+        "fatigue_delta": [
+          2,
+          4
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_tteokbokki_fritter",
+      "name_ko": "떡볶이와 튀김의 밤",
+      "group": "night",
+      "tags": [
+        "food",
+        "spicy"
+      ],
+      "cg_path": "res://assets/events/night/snacks/tteokbokki_fritter.png",
+      "cg_brief": "매콤한 떡볶이와 튀김을 먹는 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "매콤달콤한 떡볶이와 바삭한 튀김이 머릿속에서 떠나지 않는다.",
+      "chance": 0.045,
+      "dialogue": [
+        "오늘 밤에는 빨간 양념이 자꾸 생각났다.",
+        "떡볶이 국물에 튀김을 살짝 찍는 순간, 내일의 절제력은 잠깐 휴가를 갔다.",
+        "맵고 달고 바삭한 조합 앞에서 나는 아주 쉽게 설득당했다."
+      ],
+      "effects": {
+        "cash_delta": -18000,
+        "health_delta": [
+          -5,
+          -2
+        ],
+        "mood_delta": [
+          11,
+          18
+        ],
+        "fatigue_delta": [
+          2,
+          5
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_ramyeon_gimbap",
+      "name_ko": "라면과 김밥",
+      "group": "night",
+      "tags": [
+        "food",
+        "convenience"
+      ],
+      "cg_path": "res://assets/events/night/snacks/ramyeon_gimbap.png",
+      "cg_brief": "냄비 라면과 김밥을 앞에 둔 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "한밤의 라면 냄새와 김밥 한 줄이 지나치게 선명하다.",
+      "chance": 0.045,
+      "dialogue": [
+        "물을 올리는 소리만으로도 이미 패배를 예감했다.",
+        "보글보글 끓는 라면 옆에 김밥을 놓으니, 오늘 밤은 이상할 정도로 완성도가 높았다.",
+        "국물 한 숟갈에 피곤했던 하루가 잠깐 조용해졌다."
+      ],
+      "effects": {
+        "cash_delta": -9000,
+        "health_delta": [
+          -4,
+          -1
+        ],
+        "mood_delta": [
+          8,
+          14
+        ],
+        "fatigue_delta": [
+          1,
+          4
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_pizza",
+      "name_ko": "새벽 피자 한 조각",
+      "group": "night",
+      "tags": [
+        "food",
+        "delivery"
+      ],
+      "cg_path": "res://assets/events/night/snacks/pizza.png",
+      "cg_brief": "피자 박스를 열고 설레는 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "치즈가 길게 늘어나는 피자 생각이 밤공기를 타고 들어온다.",
+      "chance": 0.045,
+      "dialogue": [
+        "딱 한 조각만 먹자고 생각했다.",
+        "하지만 피자 상자는 사람 마음을 너무 잘 안다. 한 조각 옆에는 언제나 다음 조각이 있었다.",
+        "치즈가 늘어나는 동안, 오늘의 걱정도 잠깐 같이 늘어졌다."
+      ],
+      "effects": {
+        "cash_delta": -24000,
+        "health_delta": [
+          -5,
+          -2
+        ],
+        "mood_delta": [
+          10,
+          17
+        ],
+        "fatigue_delta": [
+          2,
+          5
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_jokbal_bossam",
+      "name_ko": "족발과 보쌈 세트",
+      "group": "night",
+      "tags": [
+        "food",
+        "delivery"
+      ],
+      "cg_path": "res://assets/events/night/snacks/jokbal_bossam.png",
+      "cg_brief": "족발/보쌈 세트를 앞에 둔 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "고기 야식의 묵직한 행복이 주문 버튼 위에 손가락을 올리게 한다.",
+      "chance": 0.045,
+      "dialogue": [
+        "오늘은 조금 과한가 싶었지만, 고기는 언제나 그럴듯한 이유를 만든다.",
+        "상추 위에 고기와 마늘, 쌈장을 얹는 순간 마음이 묵직하게 풀렸다.",
+        "지갑은 가벼워졌지만 식탁은 꽤 당당해졌다."
+      ],
+      "effects": {
+        "cash_delta": -42000,
+        "health_delta": [
+          -6,
+          -3
+        ],
+        "mood_delta": [
+          13,
+          21
+        ],
+        "fatigue_delta": [
+          3,
+          6
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_malatang",
+      "name_ko": "얼얼한 마라탕",
+      "group": "night",
+      "tags": [
+        "food",
+        "spicy"
+      ],
+      "cg_path": "res://assets/events/night/snacks/malatang.png",
+      "cg_brief": "매운 국물 앞에서 땀 흘리는 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "얼얼하고 뜨거운 국물이 오늘 밤의 집중력을 전부 빼앗는다.",
+      "chance": 0.045,
+      "dialogue": [
+        "매운 건 내일 후회할 수도 있다. 그런데 오늘의 나는 내일의 나와 협상할 생각이 없었다.",
+        "국물 한 입에 입술이 얼얼해졌고, 이상하게 기분은 더 선명해졌다.",
+        "땀이 조금 났지만, 그만큼 살아 있는 느낌도 났다."
+      ],
+      "effects": {
+        "cash_delta": -21000,
+        "health_delta": [
+          -6,
+          -2
+        ],
+        "mood_delta": [
+          10,
+          18
+        ],
+        "fatigue_delta": [
+          2,
+          5
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_dakbal",
+      "name_ko": "매운 닭발",
+      "group": "night",
+      "tags": [
+        "food",
+        "spicy"
+      ],
+      "cg_path": "res://assets/events/night/snacks/dakbal.png",
+      "cg_brief": "매운 닭발을 조심스럽게 먹는 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "맵고 진한 야식이 스트레스를 한 번에 밀어낼 것만 같다.",
+      "chance": 0.045,
+      "dialogue": [
+        "스트레스가 많은 날에는 혀도 같이 바빠지고 싶어 하는 걸까.",
+        "맵다, 정말 맵다. 그런데 이상하게 젓가락은 멈추지 않았다.",
+        "입은 불타고 있었지만 기분은 묘하게 개운해졌다."
+      ],
+      "effects": {
+        "cash_delta": -23000,
+        "health_delta": [
+          -7,
+          -3
+        ],
+        "mood_delta": [
+          12,
+          20
+        ],
+        "fatigue_delta": [
+          3,
+          6
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_gopchang",
+      "name_ko": "곱창구이의 유혹",
+      "group": "night",
+      "tags": [
+        "food",
+        "grilled"
+      ],
+      "cg_path": "res://assets/events/night/snacks/gopchang.png",
+      "cg_brief": "곱창구이 앞에서 못 참는 표정",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "고소한 기름 냄새와 볶음밥 생각이 밤을 놓아주지 않는다.",
+      "chance": 0.045,
+      "dialogue": [
+        "오늘 밤은 고소한 냄새가 머릿속에서 계속 지글거렸다.",
+        "마늘과 부추, 소스까지 갖추고 나니 이건 식사가 아니라 작은 축제 같았다.",
+        "마지막 볶음밥을 생각하자 더는 버틸 수 없었다."
+      ],
+      "effects": {
+        "cash_delta": -36000,
+        "health_delta": [
+          -7,
+          -3
+        ],
+        "mood_delta": [
+          13,
+          21
+        ],
+        "fatigue_delta": [
+          3,
+          6
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_jjajang_tangsuyuk",
+      "name_ko": "짜장면과 탕수육",
+      "group": "night",
+      "tags": [
+        "food",
+        "delivery"
+      ],
+      "cg_path": "res://assets/events/night/snacks/jjajang_tangsuyuk.png",
+      "cg_brief": "배달 중식 세트와 젓가락",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "늦은 밤 중식 배달의 묵직한 조합이 자꾸 떠오른다.",
+      "chance": 0.045,
+      "dialogue": [
+        "짜장면은 이상하게 밤에 더 진하게 떠오른다.",
+        "면을 비비는 동안 탕수육은 옆에서 바삭한 표정으로 기다리고 있었다.",
+        "소스의 달콤함까지 더해지자, 오늘의 결심은 아주 부드럽게 무너졌다."
+      ],
+      "effects": {
+        "cash_delta": -26000,
+        "health_delta": [
+          -6,
+          -2
+        ],
+        "mood_delta": [
+          11,
+          19
+        ],
+        "fatigue_delta": [
+          2,
+          5
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_sushi",
+      "name_ko": "초밥 세트",
+      "group": "night",
+      "tags": [
+        "food",
+        "expensive"
+      ],
+      "cg_path": "res://assets/events/night/snacks/sushi.png",
+      "cg_brief": "초밥 세트를 조심스럽게 여는 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "조금 사치스럽지만 깔끔한 초밥 한 판이 밤의 보상처럼 보인다.",
+      "chance": 0.045,
+      "dialogue": [
+        "오늘은 기름진 것보다 깔끔한 보상이 필요했다.",
+        "초밥 뚜껑을 여는 순간, 작은 조각들이 줄지어 오늘 하루를 위로하는 것 같았다.",
+        "비싸지만 예쁘고, 예쁘지만 너무 빨리 사라졌다."
+      ],
+      "effects": {
+        "cash_delta": -32000,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          10,
+          17
+        ],
+        "fatigue_delta": [
+          1,
+          3
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_croffle_icecream",
+      "name_ko": "크로플과 아이스크림",
+      "group": "night",
+      "tags": [
+        "food",
+        "dessert"
+      ],
+      "cg_path": "res://assets/events/night/snacks/croffle_icecream.png",
+      "cg_brief": "달콤한 디저트 앞에서 반짝이는 표정",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "달콤한 디저트가 야식도 밥만큼 진지할 수 있다고 주장한다.",
+      "chance": 0.045,
+      "dialogue": [
+        "오늘 밤은 짠맛보다 단맛이 필요했다.",
+        "따뜻한 크로플 위에서 아이스크림이 천천히 녹는 걸 보니 마음도 같이 녹았다.",
+        "이건 야식이라기보다, 하루의 끝에 붙이는 달콤한 마침표였다."
+      ],
+      "effects": {
+        "cash_delta": -16000,
+        "health_delta": [
+          -4,
+          -1
+        ],
+        "mood_delta": [
+          9,
+          16
+        ],
+        "fatigue_delta": [
+          1,
+          4
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_early_sleep",
+      "name_ko": "일찍 잠들기",
+      "group": "night",
+      "tags": [
+        "recovery"
+      ],
+      "cg_path": "res://assets/backgrounds/home/sleeping_night_event.png",
+      "cg_brief": "불을 끄고 조용히 잠드는 장면",
+      "source": "data/game/day_events.json:night_events",
+      "summary_ko": "오늘은 무리하지 않고 일찍 잠든다.",
+      "chance": 0.18,
+      "dialogue": [
+        "오늘은 무리하지 않고 일찍 잠들기로 했다.",
+        "휴대폰 화면을 뒤집자 방이 천천히 조용해졌다.",
+        "내일의 내가 조금 덜 지친 얼굴이면 좋겠다."
+      ],
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          3,
+          5
+        ],
+        "mood_delta": [
+          1,
+          2
+        ],
+        "fatigue_delta": [
+          -20,
+          -12
+        ]
+      },
+      "catalog_mode": "night"
+    },
+    {
+      "id": "night_convenience_dosirak",
+      "name_ko": "편의점 도시락",
+      "group": "night",
+      "tags": [
+        "food",
+        "convenience"
+      ],
+      "cg_path": "res://assets/events/night/snacks/convenience_dosirak.png",
+      "cg_brief": "편의점 봉투와 도시락을 펼침",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "편의점 도시락",
+      "dialogue": [
+        "밤이 되자 편의점 불빛이 이상하게 다정해 보였다.",
+        "도시락 뚜껑을 열자 오늘의 귀찮음이 조금 용서됐다.",
+        "대단한 식사는 아니지만 뜨거운 밥은 사람을 금방 설득한다.",
+        "건강한 선택은 아니어도 외로운 선택은 덜 됐다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 45,
+      "effects": {
+        "cash_delta": -6500,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 밤에 편의점 도시락과 컵국을 테이블에 펼쳐놓고 먹는 치비풍 2D 이벤트 CG, 작은 방과 야식 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_cup_noodle",
+      "name_ko": "컵라면 물 붓기",
+      "group": "night",
+      "tags": [
+        "food",
+        "convenience"
+      ],
+      "cg_path": "res://assets/events/night/snacks/cup_noodle.png",
+      "cg_brief": "컵라면에 물을 붓고 기다림",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "컵라면 물 붓기",
+      "dialogue": [
+        "컵라면 뚜껑을 반쯤 열고 선까지 물을 부었다.",
+        "3분은 짧은 시간인데 야식 앞에서는 이상하게 길다.",
+        "김이 올라오자 오늘 참았던 마음도 같이 풀리는 것 같았다.",
+        "내일의 붓기는 내일의 내가 감당하기로 했다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 45,
+      "effects": {
+        "cash_delta": -2500,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          3,
+          7
+        ],
+        "fatigue_delta": [
+          1,
+          5
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 밤에 컵라면에 뜨거운 물을 붓고 기다리는 치비풍 2D 이벤트 CG, 어두운 주방과 김이 나는 컵라면, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_icecream_run",
+      "name_ko": "아이스크림 사러가기",
+      "group": "night",
+      "tags": [
+        "food",
+        "dessert"
+      ],
+      "cg_path": "res://assets/events/night/snacks/icecream_run.png",
+      "cg_brief": "밤 편의점 아이스크림 냉장고 앞",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "아이스크림 사러가기",
+      "dialogue": [
+        "갑자기 차가운 단맛이 필요해졌다.",
+        "편의점 냉장고 앞에서 한참을 서 있었다. 선택지는 너무 많고 의지는 너무 약했다.",
+        "포장을 뜯자 오늘 하루가 조금 가볍게 녹았다.",
+        "작은 아이스크림 하나가 밤의 기분을 바꿔놓았다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -6000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          7,
+          12
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "홈웨어에 가디건을 걸친 주인공이 밤 편의점 아이스크림 냉장고 앞에서 고르는 치비풍 2D 이벤트 CG, 차가운 조명과 달콤한 분위기, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_hotteok",
+      "name_ko": "호떡의 유혹",
+      "group": "night",
+      "tags": [
+        "food",
+        "winter"
+      ],
+      "cg_path": "res://assets/events/night/snacks/hotteok.png",
+      "cg_brief": "따뜻한 호떡을 들고 흐뭇한 표정",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "호떡의 유혹",
+      "dialogue": [
+        "집에 가는 길에 호떡 냄새가 붙잡았다.",
+        "종이컵에 담긴 따뜻함을 손에 쥐자 겨울밤이 조금 덜 날카로웠다.",
+        "설탕이 흘러 조심조심 먹는 동안 복잡한 생각도 잠깐 느려졌다.",
+        "이 정도 위로라면 예산표도 조금 봐줄 수 있을 것 같았다."
+      ],
+      "category_id": "night",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -4000,
+        "health_delta": [
+          -1,
+          0
+        ],
+        "mood_delta": [
+          8,
+          13
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "겨울 밤, 주인공이 따뜻한 호떡을 양손에 들고 흐뭇해하는 치비풍 2D 이벤트 CG, 길거리 포장마차 불빛과 김, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_bungeoppang",
+      "name_ko": "붕어빵 봉투",
+      "group": "night",
+      "tags": [
+        "food",
+        "winter"
+      ],
+      "cg_path": "res://assets/events/night/snacks/bungeoppang.png",
+      "cg_brief": "붕어빵 봉투를 품에 안고 귀가",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "붕어빵 봉투",
+      "dialogue": [
+        "붕어빵 봉투를 품에 안으니 작은 손난로 같았다.",
+        "팥인지 슈크림인지 고르는 일도 오늘은 중요한 결정처럼 느껴졌다.",
+        "한 입 베어 물자 추운 기분이 조금 둥글어졌다.",
+        "계절 한정 위로는 참기 어렵다."
+      ],
+      "category_id": "night",
+      "rarity": "uncommon",
+      "cooldown_days": 90,
+      "effects": {
+        "cash_delta": -5000,
+        "health_delta": [
+          -1,
+          0
+        ],
+        "mood_delta": [
+          9,
+          14
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "겨울 밤 주인공이 붕어빵 봉투를 품에 안고 집에 돌아오는 치비풍 2D 이벤트 CG, 따뜻한 봉투와 추운 거리, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_salad_guilt",
+      "name_ko": "양심의 샐러드",
+      "group": "night",
+      "tags": [
+        "food",
+        "health"
+      ],
+      "cg_path": "res://assets/events/night/snacks/salad_guilt.png",
+      "cg_brief": "샐러드를 먹지만 배달앱을 곁눈질",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "양심의 샐러드",
+      "dialogue": [
+        "오늘은 야식도 조금 양심적으로 가보기로 했다.",
+        "샐러드 뚜껑을 열었지만 마음 한쪽은 여전히 치킨집 메뉴를 떠올리고 있었다.",
+        "씹을수록 건강해지는 느낌은 있었지만 극적인 행복은 아니었다.",
+        "그래도 내일의 몸에게 덜 미안한 선택을 했다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -9000,
+        "health_delta": [
+          2,
+          5
+        ],
+        "mood_delta": [
+          1,
+          5
+        ],
+        "fatigue_delta": [
+          0,
+          4
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 밤에 샐러드를 먹으면서 옆에 켜진 배달앱 화면을 곁눈질하는 치비풍 2D 이벤트 CG, 작은 테이블과 양심적인 야식, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_yogurt_fruit",
+      "name_ko": "요거트와 과일",
+      "group": "night",
+      "tags": [
+        "food",
+        "health"
+      ],
+      "cg_path": "res://assets/events/night/snacks/yogurt_fruit.png",
+      "cg_brief": "과일과 요거트로 가벼운 야식",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "요거트와 과일",
+      "dialogue": [
+        "냉장고에서 요거트와 과일을 꺼냈다.",
+        "화려한 야식은 아니지만 색이 예뻐서 기분이 조금 나아졌다.",
+        "숟가락으로 천천히 떠먹다 보니 밤이 과하게 무거워지지 않았다.",
+        "오늘은 달콤함과 건강 사이에서 그럭저럭 합의를 봤다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -7000,
+        "health_delta": [
+          2,
+          5
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          -2,
+          2
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 밤에 요거트와 과일을 작은 그릇에 담아 먹는 치비풍 2D 이벤트 CG, 포근한 방 조명과 가벼운 야식, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_chicken_skewers",
+      "name_ko": "닭꼬치 두 개",
+      "group": "night",
+      "tags": [
+        "food",
+        "street"
+      ],
+      "cg_path": "res://assets/events/night/snacks/chicken_skewers.png",
+      "cg_brief": "길거리 닭꼬치를 들고 귀가",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "닭꼬치 두 개",
+      "dialogue": [
+        "닭꼬치 냄새를 맡고 그냥 지나치는 건 어려운 일이었다.",
+        "소스가 손에 묻을까 조심하면서도 입가에는 이미 웃음이 났다.",
+        "꼬치 두 개는 저녁도 간식도 아닌 애매한 행복이었다.",
+        "애매한 행복도 없는 것보다는 훨씬 낫다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -8000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          7,
+          12
+        ],
+        "fatigue_delta": [
+          3,
+          7
+        ]
+      },
+      "image_prompt": "밤길에서 주인공이 닭꼬치 두 개를 들고 매콤한 소스에 행복해하는 치비풍 2D 이벤트 CG, 길거리 조명과 포장마차, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_pork_cutlet",
+      "name_ko": "돈가스 배달",
+      "group": "night",
+      "tags": [
+        "food",
+        "delivery"
+      ],
+      "cg_path": "res://assets/events/night/snacks/pork_cutlet.png",
+      "cg_brief": "바삭한 돈가스 도시락을 여는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "돈가스 배달",
+      "dialogue": [
+        "바삭한 게 먹고 싶어서 돈가스를 주문했다.",
+        "뚜껑을 여는 순간 소스 냄새와 튀김 냄새가 동시에 올라왔다.",
+        "한 조각을 베어 물자 오늘의 피곤함이 잠깐 바삭하게 부서졌다.",
+        "지출은 남았지만 후회는 생각보다 늦게 왔다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -16000,
+        "health_delta": [
+          -3,
+          -1
+        ],
+        "mood_delta": [
+          9,
+          15
+        ],
+        "fatigue_delta": [
+          4,
+          8
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 밤에 바삭한 돈가스 배달 도시락을 열고 감탄하는 치비풍 2D 이벤트 CG, 작은 방 테이블과 배달 봉투, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_gukbap",
+      "name_ko": "뜨끈한 국밥",
+      "group": "night",
+      "tags": [
+        "food",
+        "korean"
+      ],
+      "cg_path": "res://assets/events/night/snacks/gukbap.png",
+      "cg_brief": "김이 나는 국밥 그릇 앞",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "뜨끈한 국밥",
+      "dialogue": [
+        "오늘 밤은 뜨끈한 국물이 필요했다.",
+        "숟가락을 들자 김이 먼저 얼굴을 감쌌다.",
+        "국밥은 대단한 위로를 약속하지 않지만 꽤 성실하게 속을 채워준다.",
+        "몸 안쪽부터 조금씩 하루가 풀렸다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -12000,
+        "health_delta": [
+          0,
+          3
+        ],
+        "mood_delta": [
+          8,
+          13
+        ],
+        "fatigue_delta": [
+          2,
+          6
+        ]
+      },
+      "image_prompt": "밤 식탁에서 주인공이 김이 나는 국밥 그릇을 앞에 두고 따뜻해하는 치비풍 2D 이벤트 CG, 국물 김과 포근한 조명, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_pasta",
+      "name_ko": "밤 파스타",
+      "group": "night",
+      "tags": [
+        "food",
+        "western"
+      ],
+      "cg_path": "res://assets/events/night/snacks/pasta.png",
+      "cg_brief": "크림/토마토 파스타를 먹는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "밤 파스타",
+      "dialogue": [
+        "괜히 오늘은 파스타가 먹고 싶었다.",
+        "포크로 면을 돌돌 감는 동안 밤이 조금 부드러워졌다.",
+        "집에서 먹는 배달 파스타도 조명을 낮추면 꽤 그럴듯했다.",
+        "내일의 예산은 잠깐 잊고 오늘의 기분을 먼저 달랬다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 75,
+      "effects": {
+        "cash_delta": -17000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          9,
+          15
+        ],
+        "fatigue_delta": [
+          3,
+          8
+        ]
+      },
+      "image_prompt": "홈웨어 차림의 주인공이 밤에 크림 파스타 또는 토마토 파스타를 먹으며 기분 좋아하는 치비풍 2D 이벤트 CG, 배달 용기와 포크, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_late_coffee",
+      "name_ko": "늦은 커피",
+      "group": "night",
+      "tags": [
+        "caffeine",
+        "insomnia"
+      ],
+      "cg_path": "res://assets/events/night/snacks/late_coffee.png",
+      "cg_brief": "밤에 커피를 내려 마시며 고민",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "늦은 커피",
+      "dialogue": [
+        "밤인데도 커피를 내렸다.",
+        "마시면 잠이 늦어진다는 걸 알면서도 향이 너무 쉽게 마음을 이겼다.",
+        "따뜻한 컵을 쥐고 있으니 오늘을 조금 더 붙잡을 수 있을 것 같았다.",
+        "내일 아침의 내가 이 선택을 어떻게 평가할지는 아직 모른다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": -4000,
+        "health_delta": [
+          -2,
+          0
+        ],
+        "mood_delta": [
+          4,
+          8
+        ],
+        "fatigue_delta": [
+          -6,
+          4
+        ]
+      },
+      "image_prompt": "어두운 방에서 주인공이 늦은 밤 커피를 내려 마시며 고민하는 치비풍 2D 이벤트 CG, 커피잔과 노트북 불빛, 스마트폰 세로 구도"
+    },
+    {
+      "id": "night_insomnia_scroll",
+      "name_ko": "잠 안 와서 폰 보기",
+      "group": "night",
+      "tags": [
+        "insomnia",
+        "mood"
+      ],
+      "cg_path": "res://assets/events/night/snacks/insomnia_scroll.png",
+      "cg_brief": "어두운 방에서 휴대폰 화면을 보는 장면",
+      "source": "phase1_new_event_scripts",
+      "title_ko": "잠 안 와서 폰 보기",
+      "dialogue": [
+        "불을 껐는데 잠은 오지 않았다.",
+        "휴대폰을 켜자 짧은 영상들이 끝없이 이어졌다.",
+        "웃긴 것도 있었고 아무 의미 없는 것도 있었지만 손가락은 계속 움직였다.",
+        "시간을 잃는 감각은 조용했고, 피로는 아침에 크게 청구될 것이다."
+      ],
+      "category_id": "night",
+      "rarity": "common",
+      "cooldown_days": 60,
+      "effects": {
+        "cash_delta": 0,
+        "health_delta": [
+          -4,
+          -1
+        ],
+        "mood_delta": [
+          -5,
+          3
+        ],
+        "fatigue_delta": [
+          10,
+          18
+        ]
+      },
+      "image_prompt": "어두운 방 침대에서 주인공이 이불을 덮고 휴대폰 화면을 바라보는 치비풍 2D 이벤트 CG, 푸른 화면빛과 잠 못 드는 밤 분위기, 스마트폰 세로 구도"
+    }
+  ]
+}

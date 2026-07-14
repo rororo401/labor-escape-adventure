@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "price_data_sha256": "48164f33c4fe18f9187912e1b9f88d9866b67cab13fa76fa24af430ff9213ff8",
+  "seed_count_per_strategy": 500,
+  "strategy_count": 8,
+  "target_net_worth": 1000000000,
+  "difficulties": {
+    "hard": {
+      "salary_multiplier": 1.0,
+      "samples": 4000,
+      "clears": 675,
+      "clear_rate": 0.16875,
+      "strategies": {
+        "cash_conservative": {"clears": 93, "required_tickers_for_all_clears": []},
+        "equal_three": {"clears": 95, "required_tickers_for_all_clears": []},
+        "equal_five": {"clears": 87, "required_tickers_for_all_clears": []},
+        "monthly_random": {"clears": 9, "required_tickers_for_all_clears": []},
+        "momentum": {"clears": 232, "required_tickers_for_all_clears": []},
+        "loss_averaging": {"clears": 31, "required_tickers_for_all_clears": []},
+        "annual_rebalance": {"clears": 36, "required_tickers_for_all_clears": []},
+        "single_stock": {"clears": 92, "required_tickers_for_all_clears": []}
+      }
+    },
+    "normal": {
+      "salary_multiplier": 2.75,
+      "samples": 4000,
+      "clears": 2398,
+      "clear_rate": 0.5995,
+      "strategies": {
+        "cash_conservative": {"clears": 254, "required_tickers_for_all_clears": []},
+        "equal_three": {"clears": 240, "required_tickers_for_all_clears": []},
+        "equal_five": {"clears": 326, "required_tickers_for_all_clears": []},
+        "monthly_random": {"clears": 492, "required_tickers_for_all_clears": []},
+        "momentum": {"clears": 381, "required_tickers_for_all_clears": []},
+        "loss_averaging": {"clears": 224, "required_tickers_for_all_clears": []},
+        "annual_rebalance": {"clears": 290, "required_tickers_for_all_clears": []},
+        "single_stock": {"clears": 191, "required_tickers_for_all_clears": []}
+      }
+    },
+    "easy": {
+      "salary_multiplier": 7.0,
+      "samples": 4000,
+      "clears": 3741,
+      "clear_rate": 0.93525,
+      "rescue_uses": 0,
+      "strategies": {
+        "cash_conservative": {"clears": 471, "required_tickers_for_all_clears": []},
+        "equal_three": {"clears": 459, "required_tickers_for_all_clears": []},
+        "equal_five": {"clears": 486, "required_tickers_for_all_clears": []},
+        "monthly_random": {"clears": 500, "required_tickers_for_all_clears": []},
+        "momentum": {"clears": 478, "required_tickers_for_all_clears": []},
+        "loss_averaging": {"clears": 465, "required_tickers_for_all_clears": []},
+        "annual_rebalance": {"clears": 492, "required_tickers_for_all_clears": []},
+        "single_stock": {"clears": 390, "required_tickers_for_all_clears": []}
+      }
+    }
+  },
+  "ratios_to_hard": {
+    "normal": 3.5525925925925925,
+    "easy": 5.542222222222222
+  }
+}

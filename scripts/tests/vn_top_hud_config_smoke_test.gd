@@ -1,0 +1,57 @@
+extends "res://scripts/tests/test_scene_tree.gd"
+
+const VnTopHudConfigScript := preload("res://scripts/ui/vn_top_hud_config.gd")
+const UiCommonNodeNamesScript := preload("res://scripts/ui/ui_common_node_names.gd")
+
+
+func _initialize() -> void:
+	_expect(VnTopHudConfigScript.DATE_LABEL_NAME == UiCommonNodeNamesScript.DATE_LABEL_NAME, "date label name should use the shared UI node name")
+	_expect(VnTopHudConfigScript.PANEL_IMAGE_NAME == "TopStatusPanelImage", "panel image name should stay stable")
+	_expect(VnTopHudConfigScript.BUTTON_ROW_NAME == "TopButtons", "button row name should stay stable")
+	_expect(VnTopHudConfigScript.MENU_BUTTON_NAME == "MenuButton", "menu button name should stay stable")
+	_expect(VnTopHudConfigScript.SETTINGS_BUTTON_NAME == "SettingsButton", "settings button name should stay stable")
+	_expect(VnTopHudConfigScript.AUTO_BUTTON_NAME == "AutoAdvanceButton", "auto button name should stay stable")
+	_expect(VnTopHudConfigScript.KEY_PANEL_IMAGE == "panel_image", "panel image ref key should stay stable")
+	_expect(VnTopHudConfigScript.KEY_DATE_LABEL == "date_label", "date label ref key should stay stable")
+	_expect(VnTopHudConfigScript.KEY_STATUS_BARS == "status_bars", "status bars ref key should stay stable")
+	_expect(VnTopHudConfigScript.KEY_BUTTON_ROW == "button_row", "button row ref key should stay stable")
+	_expect(VnTopHudConfigScript.KEY_MENU_BUTTON == "menu_button", "menu button ref key should stay stable")
+	_expect(VnTopHudConfigScript.KEY_SETTINGS_BUTTON == "settings_button", "settings button ref key should stay stable")
+	_expect(VnTopHudConfigScript.KEY_AUTO_BUTTON == "auto_button", "auto button ref key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_STATUS == "status", "status option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_SHOW_STATUS_BARS == "show_status_bars", "show status bars option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_DATE_LABEL_NAME == "date_label_name", "date label name option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_DATE_POSITION == "date_position", "date position option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_DATE_WIDTH == "date_width", "date width option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_DATE_FONT_SIZE == "date_font_size", "date font-size option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_PANEL_POSITION == "panel_position", "panel position option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_STATUS_BARS_POSITION == "status_bars_position", "status bars position option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_BUTTON_ROW_NAME == "button_row_name", "button row name option key should stay stable")
+	_expect(VnTopHudConfigScript.OPTION_BUTTON_ROW_POSITION == "button_row_position", "button row position option key should stay stable")
+	_expect(VnTopHudConfigScript.PANEL_TEXTURE_PATH == "res://assets/ui/top_status_panel_v2.png", "panel texture path should use the upgraded top HUD asset")
+	_expect(VnTopHudConfigScript.MENU_BUTTON_NORMAL_TEXTURE_PATH == "res://assets/ui/top_buttons/menu_symbol_normal.png", "menu normal texture path should use the symbol-only icon")
+	_expect(VnTopHudConfigScript.MENU_BUTTON_HOVER_TEXTURE_PATH == "res://assets/ui/top_buttons/menu_symbol_hover.png", "menu hover texture path should use the symbol-only icon")
+	_expect(VnTopHudConfigScript.MENU_BUTTON_PRESSED_TEXTURE_PATH == "res://assets/ui/top_buttons/menu_symbol_pressed.png", "menu pressed texture path should use the symbol-only icon")
+	_expect(VnTopHudConfigScript.SETTINGS_BUTTON_NORMAL_TEXTURE_PATH == "res://assets/ui/top_buttons/settings_symbol_normal.png", "settings normal texture path should use the symbol-only icon")
+	_expect(VnTopHudConfigScript.SETTINGS_BUTTON_HOVER_TEXTURE_PATH == "res://assets/ui/top_buttons/settings_symbol_hover.png", "settings hover texture path should use the symbol-only icon")
+	_expect(VnTopHudConfigScript.SETTINGS_BUTTON_PRESSED_TEXTURE_PATH == "res://assets/ui/top_buttons/settings_symbol_pressed.png", "settings pressed texture path should use the symbol-only icon")
+	_expect(VnTopHudConfigScript.PANEL_POSITION == Vector2(16, 14), "panel position should stay stable")
+	_expect(VnTopHudConfigScript.PANEL_SIZE == Vector2(688, 82), "panel size should allow date and status rows")
+	_expect(VnTopHudConfigScript.DATE_LABEL_POSITION == Vector2(44, 26), "date label should align with health and sit slightly lower")
+	_expect(VnTopHudConfigScript.DATE_LABEL_WIDTH == 500.0, "date label width should leave room for the top buttons")
+	_expect(VnTopHudConfigScript.DATE_LABEL_HEIGHT == 28.0, "date label height should fit the larger text")
+	_expect(VnTopHudConfigScript.DATE_FONT_SIZE == 20, "date font size should use the enlarged HUD size")
+	_expect(VnTopHudConfigScript.STATUS_BARS_POSITION == Vector2(44, 54), "status bars should sit on the second HUD row")
+	_expect(VnTopHudConfigScript.BUTTON_ROW_POSITION == Vector2(480, 24), "button row should leave room for the auto control")
+	_expect(VnTopHudConfigScript.BUTTON_ROW_SIZE == Vector2(224, 62), "button row should fit auto, menu, and settings controls")
+	_expect(VnTopHudConfigScript.TOP_BUTTON_SIZE == Vector2(62, 62), "top button size should stay stable")
+	_expect(VnTopHudConfigScript.AUTO_BUTTON_SIZE == Vector2(76, 62), "auto button should have a readable touch target")
+
+	print("VN top HUD config smoke test passed.")
+	finish_test()
+
+
+func _expect(condition: bool, message: String) -> void:
+	if not condition:
+		push_error(message)
+		fail_test()

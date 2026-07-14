@@ -1,0 +1,115 @@
+extends "res://scripts/tests/test_scene_tree.gd"
+
+const DayEventKeysScript := preload("res://scripts/core/dayflow/day_event_keys.gd")
+const CalendarPayloadKeysScript := preload("res://scripts/core/calendar_payload_keys.gd")
+const IdentityPayloadKeysScript := preload("res://scripts/core/identity_payload_keys.gd")
+const LocalizedPayloadKeysScript := preload("res://scripts/core/localized_payload_keys.gd")
+const PlayerStatusKeysScript := preload("res://scripts/core/player_status_keys.gd")
+const ResultKeysScript := preload("res://scripts/core/result_keys.gd")
+
+
+func _initialize() -> void:
+	_verify_payload_keys()
+	_verify_action_row_keys()
+	_verify_day_and_status_keys()
+	_verify_rule_keys_and_ids()
+
+	print("Day event keys smoke test passed.")
+	finish_test()
+
+
+func _verify_payload_keys() -> void:
+	_expect(DayEventKeysScript.KEY_DAY_ACTIONS == "day_actions", "day actions key should stay stable")
+	_expect(DayEventKeysScript.KEY_ACTIONS_BY_ID == "actions_by_id", "actions index key should stay stable")
+	_expect(DayEventKeysScript.KEY_WEEKDAY_EVENTS == "weekday_events", "weekday events key should stay stable")
+	_expect(DayEventKeysScript.KEY_WEEKDAY_EVENTS_BY_ID == "weekday_events_by_id", "weekday events index key should stay stable")
+	_expect(DayEventKeysScript.KEY_NIGHT_EVENTS == "night_events", "night events key should stay stable")
+	_expect(DayEventKeysScript.KEY_NIGHT_EVENTS_BY_ID == "night_events_by_id", "night events index key should stay stable")
+	_expect(DayEventKeysScript.KEY_RULES == "rules", "rules key should stay stable")
+	_expect(DayEventKeysScript.KEY_CLOSED_DAY_CHOICE_LIMIT == "closed_day_choice_limit", "closed-day limit key should stay stable")
+	_expect(DayEventKeysScript.KEY_SPECIAL_ANNUAL_EVENTS_PATH == "special_annual_events_path", "special annual events path key should stay stable")
+	_expect(DayEventKeysScript.KEY_EVENT_HISTORY == "event_history", "event history key should stay stable")
+	_expect(DayEventKeysScript.KEY_CONDITIONS == "conditions", "structured event conditions key should stay stable")
+	_expect(DayEventKeysScript.KEY_RANDOM_EVENT_OCCURRENCE == "random_event_occurrence", "random occurrence rule key should stay stable")
+	_expect(DayEventKeysScript.KEY_DEFAULT_ACTION == "default_action", "default action key should stay stable")
+	_expect(DayEventKeysScript.KEY_AVAILABLE_CHOICES == "available_choices", "choices key should stay stable")
+	_expect(DayEventKeysScript.KEY_DAY_ACTION == "day_action", "day-action result key should stay stable")
+	_expect(DayEventKeysScript.KEY_MARKET_FIXED_EFFECT == "market_fixed_effect", "market fixed effect result key should stay stable")
+
+
+func _verify_action_row_keys() -> void:
+	_expect(DayEventKeysScript.KEY_ROWS == "rows", "rows key should stay stable")
+	_expect(DayEventKeysScript.KEY_BY_ID == "by_id", "by-id key should stay stable")
+	_expect(DayEventKeysScript.KEY_ID == IdentityPayloadKeysScript.KEY_ID, "id key should use the shared identity key")
+	_expect(DayEventKeysScript.KEY_NAME_KO == LocalizedPayloadKeysScript.KEY_NAME_KO, "Korean name key should use the shared localized payload key")
+	_expect(DayEventKeysScript.KEY_SUMMARY_KO == LocalizedPayloadKeysScript.KEY_SUMMARY_KO, "Korean summary key should use the shared localized payload key")
+	_expect(DayEventKeysScript.KEY_MODE == "mode", "mode key should stay stable")
+	_expect(DayEventKeysScript.KEY_CATEGORY_ID == "category_id", "category id key should stay stable")
+	_expect(DayEventKeysScript.KEY_CATEGORY_KO == "category_ko", "category label key should stay stable")
+	_expect(DayEventKeysScript.KEY_CHANCE == "chance", "chance key should stay stable")
+	_expect(DayEventKeysScript.KEY_GROUP == "group", "group key should stay stable")
+	_expect(DayEventKeysScript.KEY_TAGS == "tags", "tags key should stay stable")
+	_expect(DayEventKeysScript.KEY_COOLDOWN_DAYS == "cooldown_days", "cooldown key should stay stable")
+	_expect(DayEventKeysScript.KEY_TAG_COOLDOWN_DAYS == "tag_cooldown_days", "tag cooldown key should stay stable")
+	_expect(DayEventKeysScript.KEY_CG_COOLDOWN_DAYS == "cg_cooldown_days", "CG cooldown key should stay stable")
+	_expect(DayEventKeysScript.KEY_WEIGHT == "weight", "weight key should stay stable")
+	_expect(DayEventKeysScript.KEY_RARITY == "rarity", "rarity key should stay stable")
+	_expect(DayEventKeysScript.KEY_CG_PATH == "cg_path", "CG path key should stay stable")
+	_expect(DayEventKeysScript.KEY_DIALOGUE == "dialogue", "dialogue key should stay stable")
+	_expect(DayEventKeysScript.KEY_EFFECTS == "effects", "effects key should stay stable")
+	_expect(DayEventKeysScript.KEY_EVENT == "event", "event-result key should stay stable")
+	_expect(DayEventKeysScript.KEY_EFFECT == "effect", "effect-result key should stay stable")
+
+
+func _verify_day_and_status_keys() -> void:
+	_expect(DayEventKeysScript.KEY_DATE == CalendarPayloadKeysScript.KEY_DATE, "date key should use the shared calendar payload key")
+	_expect(DayEventKeysScript.KEY_WEEKDAY == CalendarPayloadKeysScript.KEY_WEEKDAY, "weekday key should use the shared calendar payload key")
+	_expect(DayEventKeysScript.KEY_IS_TRADING_DAY == CalendarPayloadKeysScript.KEY_IS_TRADING_DAY, "trading-day key should use the shared calendar payload key")
+	_expect(DayEventKeysScript.KEY_REASON == "reason", "reason key should stay stable")
+	_expect(DayEventKeysScript.KEY_NAME == "name", "day name key should stay stable")
+	_expect(DayEventKeysScript.KEY_OK == ResultKeysScript.KEY_OK, "ok result key should use the shared result key")
+	_expect(DayEventKeysScript.KEY_MARKET == "market", "market result key should stay stable")
+	_expect(DayEventKeysScript.KEY_IS_OPEN == "is_open", "market-open key should stay stable")
+	_expect(DayEventKeysScript.KEY_PHASE_AVAILABLE == "phase_available", "market phase key should stay stable")
+	_expect(DayEventKeysScript.KEY_END_OF_DAY_EFFECT == "end_of_day_effect", "end-of-day effect key should stay stable")
+	_expect(DayEventKeysScript.KEY_MARKET_CLOSE_REPORT == "market_close_report", "market close report key should stay stable")
+	_expect(DayEventKeysScript.KEY_STATUS == ResultKeysScript.KEY_STATUS, "status result key should use the shared result key")
+	_expect(DayEventKeysScript.KEY_GAME_FINISHED == "game_finished", "game-finished key should stay stable")
+	_expect(DayEventKeysScript.KEY_SLEEP_REQUIRED == "sleep_required", "sleep-required key should stay stable")
+	_expect(DayEventKeysScript.KEY_HEALTH == PlayerStatusKeysScript.KEY_HEALTH, "health key should use the shared player-status key")
+	_expect(DayEventKeysScript.KEY_FATIGUE == PlayerStatusKeysScript.KEY_FATIGUE, "fatigue key should use the shared player-status key")
+	_expect(DayEventKeysScript.KEY_EVENT_ID_PATTERN == "event_id_pattern", "event id pattern key should stay stable")
+	_expect(DayEventKeysScript.KEY_COMPLETED_DAY == "completed_day", "completed-day key should stay stable")
+	_expect(DayEventKeysScript.KEY_SELECTED == "selected", "selected key should stay stable")
+
+
+func _verify_rule_keys_and_ids() -> void:
+	_expect(DayEventKeysScript.RULE_SICK_OVERRIDE == "sick_override", "sick rule key should stay stable")
+	_expect(DayEventKeysScript.RULE_ANNUAL_SPECIAL_DATES == "annual_special_dates", "annual special date rule key should stay stable")
+	_expect(DayEventKeysScript.RULE_SUMMER_VACATION == "summer_vacation", "vacation rule key should stay stable")
+	_expect(DayEventKeysScript.RULE_FAMILY_HOLIDAY_NAMES == "family_holiday_names", "family-holiday rule key should stay stable")
+	_expect(DayEventKeysScript.RULE_FREE_CHOICE_HOLIDAY_NAMES == "free_choice_holiday_names", "free-choice holiday rule key should stay stable")
+	_expect(DayEventKeysScript.RULE_EVENT_CONDITIONS == "event_conditions", "event condition rule key should stay stable")
+	_expect(DayEventKeysScript.MODE_CHOICE_CLOSED == "choice_closed", "closed choice mode should stay stable")
+	_expect(DayEventKeysScript.MODE_AUTO_TRADING == "auto_trading", "auto-trading mode should stay stable")
+	_expect(DayEventKeysScript.MODE_ANNUAL_SPECIAL == "annual_special", "annual special mode should stay stable")
+	_expect(DayEventKeysScript.MODE_WEEKDAY_RANDOM == "weekday_random", "weekday random mode should stay stable")
+	_expect(DayEventKeysScript.REASON_HOLIDAY == "holiday", "holiday reason should stay stable")
+	_expect(DayEventKeysScript.GROUP_COMPANY_WORK == "company_work", "company work group should stay stable")
+	_expect(DayEventKeysScript.HOLIDAY_NAME_SUBSTITUTE == "대체공휴일", "substitute holiday name should stay stable")
+	_expect(DayEventKeysScript.ACTION_COMPANY_WORK == "company_work", "company work action should stay stable")
+	_expect(DayEventKeysScript.ACTION_HOLIDAY_REST == "holiday_rest", "holiday rest action should stay stable")
+	_expect(DayEventKeysScript.ACTION_NAP == "nap", "nap action should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_CLOSED_DAY_CHOICE_LIMIT == 4, "default closed-day limit should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_EVENT_COOLDOWN_DAYS == 60, "default event cooldown should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_CG_COOLDOWN_DAYS == 30, "default CG cooldown should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_TAG_COOLDOWN_DAYS == 30, "default tag cooldown should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_TAG_CANDIDATE_LIMIT == 2, "default tag candidate limit should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_WEEKDAY_EVENT_OCCURRENCE == 0.30, "default weekday occurrence should stay stable")
+	_expect(DayEventKeysScript.DEFAULT_NIGHT_EVENT_OCCURRENCE == 0.35, "default night occurrence should stay stable")
+
+
+func _expect(condition: bool, message: String) -> void:
+	if not condition:
+		push_error(message)
+		fail_test()

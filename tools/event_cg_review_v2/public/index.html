@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이벤트 CG 재생산 검수</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">GAMA STOCK · REGEN REVIEW</p>
+      <h1>이벤트 CG 재생산 검수 <span id="appVersion"></span></h1>
+      <p id="summary" class="summary">목록을 불러오는 중...</p>
+    </div>
+    <div class="legend" aria-label="판정 단축키">
+      <span><kbd>1</kbd> 승인</span>
+      <span><kbd>2</kbd> 수정</span>
+      <span><kbd>3</kbd> 재생성</span>
+      <span><kbd>←</kbd><kbd>→</kbd> 이동</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats" aria-label="검수 현황">
+      <div><strong id="countTotal">0</strong><span>전체</span></div>
+      <div><strong id="countPending">0</strong><span>미검수</span></div>
+      <div><strong id="countApproved">0</strong><span>승인</span></div>
+      <div><strong id="countEdit">0</strong><span>수정</span></div>
+      <div><strong id="countRemake">0</strong><span>재생성</span></div>
+      <div><strong id="countVisible">0</strong><span>검색 결과</span></div>
+    </section>
+
+    <section class="filters" aria-label="필터">
+      <input id="searchInput" type="search" placeholder="이벤트명·경로·대사 검색">
+      <select id="scopeFilter"><option value="all">전체 대상</option></select>
+      <select id="groupFilter"><option value="all">전체 그룹</option></select>
+      <select id="variantFilter"><option value="all">전체 계절</option></select>
+      <select id="statusFilter">
+        <option value="all">전체 판정</option>
+        <option value="pending" selected>미검수</option>
+        <option value="approved">승인</option>
+        <option value="needs_edit">수정 필요</option>
+        <option value="remake">다시 만들기</option>
+      </select>
+      <select id="sortSelect">
+        <option value="default">그룹·계절순</option>
+        <option value="path">경로순</option>
+        <option value="status">판정순</option>
+      </select>
+    </section>
+
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="emptyMessage" class="empty" hidden>조건에 맞는 이미지가 없어.</p>
+
+    <nav class="pagination" aria-label="페이지 이동">
+      <button id="previousPage" type="button">이전 페이지</button>
+      <span id="pageLabel">0 / 0</span>
+      <button id="nextPage" type="button">다음 페이지</button>
+    </nav>
+  </main>
+
+  <dialog id="detailDialog">
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <div>
+          <p id="detailScope" class="eyebrow"></p>
+          <h2 id="detailTitle"></h2>
+          <p id="detailPosition" class="detail-position"></p>
+        </div>
+        <button id="closeDialog" class="close-button" type="button" aria-label="상세 검수 닫기">×</button>
+      </header>
+
+      <section class="compare">
+        <figure>
+          <figcaption id="originalCaption">현재 게임 이미지</figcaption>
+          <img id="originalImage" alt="현재 게임 이미지">
+        </figure>
+        <figure class="candidate-figure">
+          <figcaption id="candidateCaption">신규 재생산 이미지</figcaption>
+          <img id="candidateImage" alt="신규 재생산 이미지">
+        </figure>
+      </section>
+
+      <section class="detail-info">
+        <div class="badges" id="detailBadges"></div>
+        <p id="detailSummary"></p>
+        <p id="detailPlan" class="muted"></p>
+        <p id="detailPath" class="path"></p>
+        <p id="detailPrevious" class="previous"></p>
+      </section>
+
+      <section class="decision-panel">
+        <textarea id="noteInput" rows="2" placeholder="판정 메모 (선택)"></textarea>
+        <div class="decision-buttons">
+          <button type="button" data-status="approved" class="approve">1 · 신규 승인</button>
+          <button type="button" data-status="needs_edit" class="edit">2 · 수정 필요</button>
+          <button type="button" data-status="remake" class="remake">3 · 다시 만들기</button>
+        </div>
+      </section>
+
+      <nav class="dialog-nav">
+        <button id="previousItem" type="button">← 이전</button>
+        <button id="nextItem" type="button">다음 →</button>
+      </nav>
+    </div>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
