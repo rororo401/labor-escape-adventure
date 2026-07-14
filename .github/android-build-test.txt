@@ -1,1 +1,2 @@
 Triggers the Android APK validation workflow.
+Second validation run uses split artifacts for download.
