@@ -12,6 +12,15 @@ Windows 10/11 64비트용 실행 파일은 [Releases](https://github.com/dorodo7
 
 코드 서명을 하지 않은 개인 취미 프로젝트이므로 Windows SmartScreen 경고가 표시될 수 있습니다. 릴리스에 적힌 SHA-256과 내려받은 파일의 해시가 일치하는지 확인해 주세요.
 
+### GitHub를 처음 사용하는 분
+
+1. [최신 Windows판 다운로드 페이지](https://github.com/dorodo786-lang/labor-escape-adventure/releases/latest)를 엽니다.
+2. 페이지 아래쪽 `Assets`에서 이름이 `LaborEscapeAdventure-Windows`로 시작하는 ZIP 파일을 누릅니다.
+3. 내려받은 ZIP 파일의 압축을 풉니다.
+4. 압축을 푼 폴더 안의 `LaborEscapeAdventure.exe`를 실행합니다.
+
+별도 설치는 필요하지 않습니다. `LaborEscapeAdventure.exe`와 `LaborEscapeAdventure.pck`는 같은 폴더에 둬야 합니다. Windows 보호 경고가 표시되면 릴리스에 기재된 SHA-256을 먼저 확인한 뒤 `추가 정보`에서 실행 여부를 결정해 주세요.
+
 ## 제작 방식
 
 프로젝트 소유자가 게임의 방향, 규칙, 밸런스, UI, 콘텐츠 기준을 정하고 반복 플레이와 이미지 검수를 진행했습니다. 구현과 정리의 대부분은 OpenAI Codex와의 대화형 작업으로 이루어졌습니다. 즉, 사람이 모든 코드를 한 줄씩 직접 작성한 프로젝트라기보다, 사람이 목표와 품질 기준을 결정하고 AI와 함께 구현·검증한 프로젝트입니다.
